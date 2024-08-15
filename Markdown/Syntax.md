@@ -1,32 +1,33 @@
 ## Các thẻ Heading
-#### Ta dùng `# -> #######` trước nội dung để hiển thị các Heading từ 1->6
+#### 1. Ta dùng `# -> #######` trước nội dung để hiển thị các Heading từ 1->6
 
-> ví dụ
+ **Ví dụ:**
 
 >       ##Thẻ Heading 2
 >       ###Thẻ Heading 3
 
-#### Ta dùng dấu `*`, `**`, `***` bao quanh nội dung để hiển thị in nghiêng, in đậm và in đậm + nghiêng.
+#### 2. Ta dùng dấu `*`, `**`, `***` bao quanh nội dung để hiển thị in nghiêng, in đậm và in đậm + nghiêng.
 
-> ví dụ
+**Ví dụ:**
 
->       *chữ nghiêng*
+    *chữ nghiêng*
 
-> kết quả: *chữ nghiêng*
+>**Kết quả**: *chữ nghiêng*
 
-> ví dụ
+**Ví dụ:**
 
->       **Chữ in đậm**
+    **Chữ in đậm**
 
-> kết quả: **Chữ in đâm**
+> **Kết quả**: **Chữ in đâm**
 
-> ví dụ
+**Ví dụ:**
 
->       ***Chữ in đậm + nghiêng***
+    ***Chữ in đậm + nghiêng***
 
-> kết quả: ***Chữ in đậm + nghiêng***
+> **Kết quả**: ***Chữ in đậm + nghiêng***
 
-> **Đoạn code**:
+
+**Đoạn code**:
 ```
 > Khối cấp 1.
 
