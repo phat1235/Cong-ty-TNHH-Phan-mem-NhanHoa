@@ -1,51 +1,37 @@
-## Git và Github cho sysadmin
+## CÔNG TY TNHH PHẦN MỀM NHÂN HÒA  
+**Văn Hóa Giao Tiếp Tại Công Ty**
 
-### Mục lục
+---
 
-[I. Mở đầu](#Modau)
+## 1. Nguyên Tắc Chung
+- **Tôn trọng**: Mọi nhân viên phải thể hiện sự tôn trọng đối với đồng nghiệp, khách hàng, và đối tác.
+- **Lịch sự**: Sử dụng ngôn ngữ lịch sự, nhã nhặn trong mọi tình huống.
+- **Trung thực**: Thông tin truyền đạt cần chính xác, minh bạch và trung thực.
 
+## 2. Giao Tiếp Trong Công Việc
+- **Email và Tin nhắn**: 
+  - Tiêu đề rõ ràng, nội dung súc tích.
+  - Trả lời email và tin nhắn trong thời gian sớm nhất có thể.
+  - Đảm bảo chính tả, ngữ pháp và ngôn ngữ phù hợp.
+- **Họp và Thảo luận**:
+  - Đến đúng giờ, chuẩn bị trước các nội dung cần trao đổi.
+  - Lắng nghe và tôn trọng ý kiến của người khác.
+  - Góp ý xây dựng, tránh chỉ trích cá nhân.
+  
+## 3. Giao Tiếp Với Khách Hàng và Đối Tác
+- **Chuyên nghiệp**: Luôn giữ thái độ chuyên nghiệp, thể hiện sự quan tâm đến nhu cầu và mong muốn của khách hàng.
+- **Cởi mở**: Tạo môi trường giao tiếp thân thiện, cởi mở nhưng vẫn giữ sự chuyên nghiệp.
+- **Giải quyết vấn đề**: Nhanh chóng giải quyết các vấn đề phát sinh, đảm bảo quyền lợi và sự hài lòng của khách hàng.
 
-<a name="Modau"></a>
-## I. Mở đầu
-### Git là gì?
-`Git` là một hệ thống quản lý phiên bản phân tán (Distributed Version Control System - DVCS) được tạo ra bởi Linus Torvalds vào năm 2005. Nó cho phép nhiều người cùng làm việc trên một dự án mã nguồn mà không cần phải lo lắng về việc ghi đè lên công việc của nhau. Git theo dõi tất cả các thay đổi trong mã nguồn của bạn, cho phép bạn dễ dàng quay lại các phiên bản trước đó nếu cần.
-### Các khái niệm cơ bản trong Git:
-* **Repository (Repo)**: Là kho lưu trữ chứa toàn bộ lịch sử của các thay đổi đối với mã nguồn.
+## 4. Giao Tiếp Nội Bộ
+- **Truyền đạt thông tin**: Đảm bảo thông tin được truyền đạt rõ ràng, đầy đủ và kịp thời.
+- **Tôn trọng cấp trên và đồng nghiệp**: Thể hiện sự tôn trọng đối với cấp trên và đồng nghiệp trong mọi tình huống.
+- **Đóng góp ý kiến**: Khuyến khích mọi nhân viên đóng góp ý kiến để cải thiện quy trình làm việc và môi trường công ty.
 
-* **Commit**: Là một bản chụp *(snapshot)* của trạng thái mã nguồn tại một thời điểm nhất định. Mỗi *commit* thường chứa một thông điệp mô tả những thay đổi đã được thực hiện.
+## 5. Tránh Các Hành Vi Không Đúng Mực
+- **Tránh gây hiểu lầm**: Không sử dụng ngôn ngữ có thể gây hiểu lầm hoặc xúc phạm.
+- **Không ngắt lời**: Tôn trọng khi người khác đang phát biểu, tránh ngắt lời.
+- **Không sử dụng ngôn ngữ khiếm nhã**: Mọi hành vi, lời nói khiếm nhã đều bị nghiêm cấm.
 
-* **Branch**: Là một nhánh độc lập của dự án nơi các thay đổi có thể được thực hiện mà không ảnh hưởng đến các nhánh khác. Nhánh mặc định trong Git thường được gọi là *master* hoặc *main*.
+---
 
-* **Merge**: Là quá trình tích hợp các thay đổi từ một nhánh khác vào nhánh hiện tại.
-
-* **Clone**: Là quá trình sao chép một repository từ máy chủ về máy tính cục bộ.
-### GitHub là gì?
-`GitHub` là một dịch vụ lưu trữ mã nguồn dựa trên web sử dụng Git làm hệ thống quản lý phiên bản. Nó cung cấp một nền tảng để các lập trình viên và
- nhóm phát triển cùng nhau hợp tác, quản lý và theo dõi các dự án phần mềm.
- 
-#### Các tính năng chính của GitHub:
-* **Repository hosting**: Lưu trữ mã nguồn của bạn trên đám mây, cho phép truy cập từ bất kỳ đâu.
-
-* **Pull Requests**: Cho phép các lập trình viên gửi yêu cầu hợp nhất các thay đổi vào mã nguồn chính. Pull requests là công cụ quan trọng cho việc đánh giá mã (code review).
-
-* **Issues**: Là hệ thống quản lý công việc, cho phép bạn theo dõi các lỗi, nhiệm vụ, và các yêu cầu tính năng.
-
-* **Actions**: Cung cấp các công cụ tự động hóa (CI/CD), cho phép bạn tự động kiểm tra và triển khai mã nguồn.
-
-* **Gists**: Là một cách để chia sẻ các đoạn mã nhỏ hoặc tài liệu với cộng đồng.
-#### Lợi ích của GitHub:
-* **Cộng tác**: Giúp nhiều người cùng làm việc trên một dự án dễ dàng hơn.
-
-* **Lưu trữ từ xa**: Mã nguồn được lưu trữ an toàn trên đám mây và có thể được sao lưu và phục hồi dễ dàng.
-
-* **Cộng đồng**: GitHub có một cộng đồng rộng lớn với hàng triệu dự án mã nguồn mở, nơi các lập trình viên có thể học hỏi và đóng góp.
-
-**Git và GitHub là các công cụ quan trọng trong quy trình phát triển phần mềm hiện đại, giúp quản lý mã nguồn một cách hiệu quả và hỗ trợ cộng tác nhóm một cách dễ dàng.**
-### Markdown là gì?
-`Markdown` là một ngôn ngữ đánh dấu nhẹ được thiết kế để dễ đọc và dễ viết bằng cách sử dụng cú pháp văn bản thuần túy. Nó cho phép bạn tạo các tài liệu có định dạng như tiêu đề, danh sách, liên kết, hình ảnh, và các phần tử HTML khác mà không cần sử dụng các thẻ phức tạp như trong HTML.
-
-#### Các đặc điểm chính của Markdown:
-* **Đơn giản**: Sử dụng cú pháp văn bản thuần túy, dễ học và dễ sử dụng.
-* **Định dạng cơ bản**: Cho phép tạo các tiêu đề, danh sách, liên kết, hình ảnh, đoạn văn, và bảng một cách dễ dàng.
-* **Tính di động**: Tài liệu Markdown có thể được chuyển đổi sang HTML, PDF, và nhiều định dạng khác.
-* **Phổ biến**: Markdown được sử dụng rộng rãi trong viết blog, tài liệu, ghi chú, và trên các nền tảng như GitHub, Reddit, và Stack Overflow.
