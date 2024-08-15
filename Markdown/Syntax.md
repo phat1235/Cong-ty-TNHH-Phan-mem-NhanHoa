@@ -145,6 +145,7 @@ II. Chương 2
 
 
 #### 8. Chèn ảnh
+Ta 2 lại chèn ảnh đó làchèn ảnh ở local hoặc ảnh được public trên Internet
 
 **Cú pháp:**
         
