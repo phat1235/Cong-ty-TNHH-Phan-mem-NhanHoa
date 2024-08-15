@@ -1,4 +1,5 @@
 **Chuyển đổi nhà cung cấp tên miền** là việc di chuyển tên miền từ một nhà đăng ký này sang nhà đăng ký khác. Dưới đây là những điều cần lưu ý khi thực hiện chuyển đổi.
+![](https://img001.prntscr.com/file/img001/dwZohJdLTvuemRe7cSSfew.png "transfer www to www")
 
 ### Khi nào nên chuyển đổi nhà cung cấp tên miền?
 - **Khi sắp đến kỳ gia hạn**: Chuyển đổi có thể tiết kiệm chi phí vì chi phí transfer thường rẻ hơn gia hạn, đặc biệt khi có chương trình khuyến mãi.
@@ -16,3 +17,4 @@
 
 4. **Tắt chức năng ẩn thông tin tên miền**:
    - Đảm bảo tắt chức năng ẩn thông tin (Whois Privacy) và xác thực địa chỉ email quản trị viên để thực hiện việc chuyển đổi.
+![](	https://img001.prntscr.com/file/img001/N5GGcKBPTTSXyTWLBdxgGQ.png "unlock Whois")
