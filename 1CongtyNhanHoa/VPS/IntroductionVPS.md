@@ -1,4 +1,3 @@
-Dưới đây là một bài viết giới thiệu về VPS (Virtual Private Server) được định dạng bằng Markdown:
 
 ---
 
