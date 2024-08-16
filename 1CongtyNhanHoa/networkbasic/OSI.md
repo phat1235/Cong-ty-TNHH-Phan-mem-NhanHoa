@@ -46,3 +46,4 @@ Mô hình OSI (Open Systems Interconnection) là một mô hình tham chiếu d�
 - **Lớp 7: Ứng Dụng** - Cung cấp dịch vụ và giao diện cho các ứng dụng người dùng.
 
 Mô hình OSI giúp xác định rõ ràng các nhiệm vụ và chức năng trong mạng máy tính, đồng thời giúp các kỹ sư và nhà phát triển hiểu và xử lý các vấn đề mạng một cách có hệ thống.
+
