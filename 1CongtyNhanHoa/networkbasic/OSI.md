@@ -1,5 +1,7 @@
 Mô hình OSI (Open Systems Interconnection) là một mô hình tham chiếu dùng để hiểu và phân tích các hoạt động trong mạng máy tính. Mô hình này được phát triển bởi Tổ chức tiêu chuẩn hóa quốc tế (ISO) và chia quá trình truyền thông thành bảy lớp khác nhau, mỗi lớp thực hiện các chức năng cụ thể. Dưới đây là một mô tả chi tiết về từng lớp của mô hình OSI:
 
+![](https://img001.prntscr.com/file/img001/AGM0ESH0T7W2mKuONAxtkg.png)
+
 ## 1. **Lớp 1: Lớp Vật Lý (Physical Layer)**
 
 - **Chức năng:** Xử lý truyền tải dữ liệu dưới dạng tín hiệu điện, quang, hoặc sóng vô tuyến qua các phương tiện vật lý (cáp mạng, sóng radio, v.v.). Xác định các đặc tính của phần cứng như tốc độ truyền dữ liệu và loại cáp sử dụng.
@@ -9,17 +11,19 @@ Mô hình OSI (Open Systems Interconnection) là một mô hình tham chiếu d�
 
 - **Chức năng:** Đảm bảo truyền tải dữ liệu chính xác giữa hai thiết bị trên cùng một mạng LAN (Local Area Network). Thực hiện kiểm tra lỗi và điều khiển luồng dữ liệu. Địa chỉ hóa tại lớp liên kết dữ liệu sử dụng địa chỉ MAC (Media Access Control).
 - **Ví dụ:** Switches, bridges, địa chỉ MAC, giao thức Ethernet.
-
+- Frame
+  
 ## 3. **Lớp 3: Lớp Mạng (Network Layer)**
 
 - **Chức năng:** Xử lý định tuyến dữ liệu từ nguồn đến đích qua nhiều mạng khác nhau. Địa chỉ hóa tại lớp mạng sử dụng địa chỉ IP (Internet Protocol). Điều này bao gồm cả việc phân đoạn dữ liệu và quản lý lưu lượng.
 - **Ví dụ:** Routers, địa chỉ IP, giao thức IP, định tuyến.
-
+- Packet
 ## 4. **Lớp 4: Lớp Giao Vận (Transport Layer)**
 
 - **Chức năng:** Đảm bảo dữ liệu được truyền tải chính xác và hoàn chỉnh từ nguồn đến đích. Cung cấp kiểm soát luồng và kiểm soát lỗi. Cung cấp hai giao thức chính là TCP (Transmission Control Protocol) và UDP (User Datagram Protocol).
 - **Ví dụ:** TCP, UDP, cổng TCP/UDP.
-
+- Segment
+- 
 ## 5. **Lớp 5: Lớp Phiên (Session Layer)**
 
 - **Chức năng:** Quản lý và duy trì các phiên giao tiếp giữa các ứng dụng. Đảm bảo rằng các kết nối giữa các ứng dụng được thiết lập, duy trì, và kết thúc đúng cách. Quản lý các phiên làm việc và đồng bộ hóa.
