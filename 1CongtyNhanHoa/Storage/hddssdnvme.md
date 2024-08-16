@@ -24,6 +24,7 @@ Hiện nay có 2 dạng ổ cứng HDD phổ biến là:
 - HDD 3.5 inch thường thấy trên máy tính để bàn
 
 ![](https://img001.prntscr.com/file/img001/VGM7LivbRNibZMlir7m0Lw.png)
+
 **Bên trong một chiếc ổ cứng HDD**
 <a name = "2"><a/>
 # 2. Ổ cứng SSD là gì?
@@ -34,9 +35,10 @@ SSD làm giảm đáng kể thời gian truy cập của người dùng thay vì
 
 SSD đắt hơn HDD trên từng dung lượng của ổ đĩa tính bằng GB, TB. Nhưng hiện nay, SSD đang có xu hướng và tốc độ giảm giá nhanh hơn HDD qua từng năm.
 
-![](https://img001.prntscr.com/file/img001/zV0Hm_WeTdy0FrCBa3UIyg.png
-)
+![](https://img001.prntscr.com/file/img001/zV0Hm_WeTdy0FrCBa3UIyg.png)
+
 **Tốc độ đo được từ một ổ cứng SSD thông dụng**
+
 <a name = "3"><a/>
 # 3. Ổ cứng NVME là gì?
 
@@ -46,8 +48,7 @@ Thông thường một cổng kết nối SATA (dùng cho ổ cứng HDD và SSD
 <a name = "4"><a/>
 # 4. Điểm khác biệt giữa ổ cứng lưu trữ NVME, SSD và HDD
 
-![](https://img001.prntscr.com/file/img001/nunkZLcoQGy9_QBdEKgzlA.png
-)
+![](https://img001.prntscr.com/file/img001/nunkZLcoQGy9_QBdEKgzlA.png)
 
 So với NVME và SSD, HDD là một dạng công nghệ ổ cứng sử dụng cách thức lưu trữ hoàn toàn khác và có thể coi là lỗi thời. Bằng việc đọc ghi dữ liệu từ một mặt đĩa phủ từ tính, HDD có độ an toàn dữ liệu, tốc độ truy cập, kích thước đều bị giới hạn bởi chất lượng vật liệu từ tính và vòng quay ổ đĩa. Khi muốn phát triển một HDD nhanh hơn, ta phải đánh đổi tuổi thọ ổ cứng vì phải tăng tốc độ vòng quay. Và kích thước, trọng lượng HDD gần như không thay đổi kể từ khi nó ra đời. Tuy nhiên bù lại bạn sẽ có dung lượng lưu trữ lớn hơn với chi phí rẻ hơn.
 
