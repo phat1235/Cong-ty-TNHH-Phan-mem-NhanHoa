@@ -1,5 +1,7 @@
 <a name = "mucluc"></a>
+
 [Mục lục](#mucluc)
+
 [1. Ổ cứng HDD là gì?](#1)
 
 [2. Ổ cứng SSD là gì?](#2)
