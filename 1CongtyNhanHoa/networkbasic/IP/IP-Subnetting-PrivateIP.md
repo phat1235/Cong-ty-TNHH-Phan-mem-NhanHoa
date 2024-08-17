@@ -3,28 +3,20 @@
 1. [IPv4](#1-ipv4)
    
 2. [Cấu trúc của Địa chỉ IP](#2-c%E1%BA%A5u-tr%C3%BAc-c%E1%BB%A7a-%C4%91%C3%ACa-chi-ip)
-   - [Network ID và Host ID](#network-id-v%C3%A0-host-id)
-
+   
 3. [Lớp Địa chỉ Mạng (Network Class)](#3-l%C3%B3p-%C4%91%C3%ACa-chi-m%E1%BA%A1ng-network-class)
-   - [Các lớp địa chỉ](#c%C3%A1c-l%E1%BB%9Bp-%C4%91%C3%ACa-chi)
  
-
 4. [Subnet Mask](#4-subnet-mask)
-   - [Chức năng và Ví dụ](#ch%C6%B0c-n%C4%83ng-v%C3%A0-v%C3%AD-d%E1%BB%99)
 
 5. [Chia nhỏ Mạng](#5-chia-nh%E1%BB%8F-m%E1%BA%A1ng)
-   - [Phương pháp chia mạng](#ph%C6%B0%C6%A1ng-ph%C3%A1p-chia-m%E1%BA%A1ng)
 
 6. [Gộp Mạng](#6-g%E1%BB%99p-m%E1%BA%A1ng)
-   - [Phương pháp gộp mạng](#ph%C6%B0%C6%A1ng-ph%C3%A1p-g%E1%BB%99p-m%E1%BA%A1ng)
 
 7. [Địa chỉ IP Cá nhân (Private IP Addresses)](#7-%C4%91%C3%ACa-chi-ip-c%C3%A1-nh%C3%A2n-private-ip-addresses)
-   - [Khái niệm](#kh%C3%A1i-ni%E1%BB%87m)
    - [NAT (Network Address Translation)](#nat-network-address-translation)
 
 8.[Gateway Mặc Định](#8-gateway-m%E1%BA%B7c-%C4%91%E1%BB%8Bnh)
    - [Chức năng của Default Gateway](#ch%C6%B0c-n%C4%83ng-c%E1%BB%A7a-default-gateway)
-
 
 ---
 1. **IPv4**:
