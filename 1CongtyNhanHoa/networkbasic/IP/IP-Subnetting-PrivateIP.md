@@ -2,33 +2,31 @@
 
 1. [IPv4](#1-ipv4)
    
-2. [Cấu trúc của Địa chỉ IP](#2-c%E1%BA%A5u-tr%C3%BAc-c%E1%BB%A7a-%C4%91%C3%ACa-chi-ip)
+2. [Cấu trúc của Địa chỉ IP](#2-cau-truc-dia-chi-ip)
    
-3. [Lớp Địa chỉ Mạng (Network Class)](#3-l%C3%B3p-%C4%91%C3%ACa-chi-m%E1%BA%A1ng-network-class)
+3. [Lớp Địa chỉ Mạng (Network Class)](#3-network-class)
  
 4. [Subnet Mask](#4-subnet-mask)
 
-5. [Chia nhỏ Mạng](#5-chia-nh%E1%BB%8F-m%E1%BA%A1ng)
+5. [Chia nhỏ Mạng](#5-chia-nho)
 
-6. [Gộp Mạng](#6-g%E1%BB%99p-m%E1%BA%A1ng)
+6. [Gộp Mạng](#6-gop-mang)
 
-7. [Địa chỉ IP Cá nhân (Private IP Addresses)](#7-%C4%91%C3%ACa-chi-ip-c%C3%A1-nh%C3%A2n-private-ip-addresses)
+7. [Địa chỉ IP Cá nhân (Private IP Addresses)](#7-private-ip-addresses)
    - [NAT (Network Address Translation)](#nat-network-address-translation)
-
-8.[Gateway Mặc Định](#8-gateway-m%E1%BA%B7c-%C4%91%E1%BB%8Bnh)
-   - [Chức năng của Default Gateway](#ch%C6%B0c-n%C4%83ng-c%E1%BB%A7a-default-gateway)
-
 ---
+
+<a name="1-ipv4"></a>
 1. **IPv4**:
    - IPv4 có độ dài 32 bit, được chia thành 4 nhóm (octet), mỗi nhóm gồm 8 bit, và được biểu diễn dưới dạng: `octet1.octet2.octet3.octet4`.
  ![](https://img001.prntscr.com/file/img001/zbASzPz2SNubZSpiT3HnOg.png)
-
+<a name="2-cau-truc-dia-chi-ip"></a>
 2. **Cấu trúc của Địa chỉ IP**:
 ![](https://img001.prntscr.com/file/img001/wAl4c4iPQamv22nzRAzMew.png)
    - Địa chỉ IP được chia thành hai phần chính: **Network ID** và **Host ID**.
    - **Network ID**: Được xác định bởi octet đầu tiên và phân loại theo 5 lớp (Class) là A, B, C, D, E.(để nhận dạng)
    - **Host ID**: Được xác định bởi các octet còn lại. Một địa chỉ IP cụ thể không được phép có giá trị Host ID là 0 hoặc 255, bởi vì giá trị 0 thường được dùng để xác định địa chỉ của một mạng, còn 255 dùng để phát tín hiệu broadcast trong mạng.
-
+<a name="3-network-class"></a>
 3. **Lớp Địa chỉ Mạng (Network Class)**:
 
 ![](https://img001.prntscr.com/file/img001/gTFuh6EIQwmCdMZhuhioOw.png)
@@ -44,7 +42,7 @@
    - **Class C**: 255.255.255.0
 
    **CIDR (Classless Inter-Domain Routing)** cho phép chia nhỏ mạng một cách chi tiết hơn bằng cách quy định các mạng con (subnet) trong mỗi Class.
-
+<a name="4-subnet-mask"></a>
 4. **Subnet Mask**:
 ![](https://img001.prntscr.com/file/img001/83gVyqPmS02dAXEuUHKCGA.png)
    - Subnet mask được sử dụng để chia một mạng lớn thành các mạng con nhỏ hơn. Nó giúp xác định xem một host đang thuộc cùng một subnet nội bộ hay nằm trên một mạng từ xa (remote network).
@@ -53,7 +51,7 @@
      - **Subnet mask**: 255.255.255.0 (biểu diễn nhị phân: 11111111.11111111.11111111.00000000)
      - **Network Address**: 192.168.123.0 (11000000.10101000.01111011.00000000)
      - **Host Address**: 132 (00000000.00000000.00000000.10000100)
-
+<a name="5-chia-nho"></a>
 5. **Chia nhỏ Mạng**:
 
 ![](https://img001.prntscr.com/file/img001/d3fDES11Qtq_VmosrVrb8g.png)
@@ -64,10 +62,10 @@
        - 192.168.123.64/26 (192.168.123.65-126)
        - 192.168.123.128/26 (192.168.123.129-190)
        - 192.168.123.192/26 (192.168.123.193-254)
-
+<a name="6-gop-mang"></a>
 6. **Gộp Mạng**:
    - Để tăng số lượng host trong một mạng, bạn có thể gộp hai mạng nhỏ thành một mạng lớn hơn. Ví dụ, gộp hai subnet 192.168.123.128/26 và 192.168.123.192/26 thành một mạng 192.168.123.128/25.
-
+<a name="#7-private-ip-addresses"></a>
 7. **Địa chỉ IP Cá nhân (Private IP Addresses)**:
 
 ![](https://img001.prntscr.com/file/img001/pABXszMNT86leAlNKpbbAQ.png)
