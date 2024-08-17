@@ -167,6 +167,10 @@ Dưới đây là phần chi tiết về cấu trúc của một tên miền:
 
 Tên miền được chia thành các cấp độ khác nhau, mỗi cấp độ được phân cách bằng dấu chấm (.). Dưới đây là các cấp độ chính của một tên miền:
 
+### Hình ảnh cấu trúc
+
+![](https://img001.prntscr.com/file/img001/0hLufjGYRiehlfA0NiBfrA.png)
+
 ### 1. Root Domain (Tên miền gốc)
 
 - **Mô tả**: Là cấp cao nhất trong cấu trúc tên miền. Trong hệ thống DNS, Root Domain không có tên cụ thể và thường được biểu diễn bằng một dấu chấm đơn lẻ ở cuối tên miền.
@@ -195,9 +199,7 @@ Tên miền được chia thành các cấp độ khác nhau, mỗi cấp độ 
   - **SLD**: `example`
   - **Subdomains**: `support`, `mail`
 
-### Hình ảnh cấu trúc
 
-![](https://img001.prntscr.com/file/img001/0hLufjGYRiehlfA0NiBfrA.png)
 
 
 
