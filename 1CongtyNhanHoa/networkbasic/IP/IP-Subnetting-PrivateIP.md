@@ -26,6 +26,7 @@
    - [Chức năng của Default Gateway](#ch%C6%B0c-n%C4%83ng-c%E1%BB%A7a-default-gateway)
 
 
+
 1. **IPv4**:
    - IPv4 có độ dài 32 bit, được chia thành 4 nhóm (octet), mỗi nhóm gồm 8 bit, và được biểu diễn dưới dạng: `octet1.octet2.octet3.octet4`.
  ![](https://img001.prntscr.com/file/img001/zbASzPz2SNubZSpiT3HnOg.png)
