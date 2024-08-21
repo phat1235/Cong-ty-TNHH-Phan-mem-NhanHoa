@@ -191,6 +191,8 @@ Tên miền được chia thành các cấp độ khác nhau, mỗi cấp độ 
 - **Mô tả**: Là phần bổ sung nằm trước Second-Level Domain và thường được dùng để phân loại các dịch vụ hoặc phần của tổ chức. Tên miền phụ có thể tiếp tục phân cấp.
 - **Ví dụ**: Trong `www.example.com.`, phần `www` là một Subdomain. Các subdomains khác có thể là `mail.example.com` hoặc `shop.example.com`.
 
+- ![](https://img001.prntscr.com/file/img001/ewrROjyxSWe8RDJzOqnphQ.png)
+
 ### Ví dụ tổng hợp
 
 - **Tên miền đầy đủ**: `mail.support.example.com.`
