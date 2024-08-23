@@ -74,6 +74,40 @@ Quá trình phân giải tên miền diễn ra qua các bước sau:
    - Recursive DNS server trả địa chỉ IP cho client.
 
 ## Các bản ghi thường thấy trong DNS
+### Ví dụ Bản Ghi SOA:
+
+```bash
+ns1.example.com. admin.example.com. (
+    2024082301 ; Serial
+    3600       ; Refresh
+    1800       ; Retry
+    1209600    ; Expire
+    86400 )    ; Minimum TTL
+```
+
+#### Giải thích các thông số:
+
+1. **`ns1.example.com.`**:
+   - **Mô tả**: Đây là tên miền của máy chủ DNS chính (master DNS server) cho vùng DNS. Nó xác định máy chủ DNS chịu trách nhiệm chính cho việc quản lý các bản ghi trong vùng này.
+
+2. **`admin.example.com.`**:
+   - **Mô tả**: Đây là địa chỉ email của người quản trị vùng. Trong bản ghi SOA, ký tự `.` được thay thế bằng dấu `@` trong địa chỉ email. Do đó, `admin.example.com.` tương đương với `admin@example.com`. Đây là người liên hệ hoặc người quản lý hệ thống DNS cho vùng này.
+
+3. **`2024082301` (Serial)**:
+   - **Mô tả**: Đây là số sê-ri (serial number) của vùng DNS. Số sê-ri là một giá trị số nguyên tăng dần, dùng để thông báo cho các máy chủ DNS phụ (slave servers) rằng có sự thay đổi trong dữ liệu của vùng. Khi bạn cập nhật dữ liệu trong vùng, bạn phải tăng số sê-ri để các máy chủ phụ biết rằng cần phải tải lại dữ liệu. `YYYYMMDDNN`
+
+4. **`3600` (Refresh)**:
+   - **Mô tả**: Đây là thời gian (tính bằng giây) mà các máy chủ DNS phụ sẽ chờ trước khi kiểm tra lại với máy chủ chính để xem có cập nhật nào mới không. Trong ví dụ này, giá trị `3600` giây tương đương với 1 giờ.
+
+5. **`1800` (Retry)**:
+   - **Mô tả**: Đây là thời gian (tính bằng giây) mà các máy chủ DNS phụ sẽ chờ trước khi thử lại nếu lần kiểm tra lại với máy chủ chính không thành công. Trong ví dụ này, giá trị `1800` giây tương đương với 30 phút.
+
+6. **`1209600` (Expire)**:
+   - **Mô tả**: Đây là thời gian (tính bằng giây) mà các máy chủ DNS phụ sẽ giữ lại bản ghi của vùng nếu không thể liên lạc với máy chủ chính trong thời gian này. Nếu không có cập nhật từ máy chủ chính trong khoảng thời gian này, các máy chủ phụ sẽ xem như dữ liệu là hết hạn và không còn cung cấp dịch vụ phân giải cho vùng đó. Trong ví dụ này, giá trị `1209600` giây tương đương với 2 tuần.
+
+7. **`86400` (Minimum TTL)**:
+   - **Mô tả**: Đây là thời gian (tính bằng giây) mà các bản ghi trong vùng này có thể được lưu vào bộ nhớ `cache` của máy khách và máy chủ DNS khác. Thời gian này cũng được sử dụng khi không có TTL khác được chỉ định cho bản ghi cụ thể. Trong ví dụ này, giá trị `86400` giây tương đương với 1 ngày.
+  
 
 - **A Record**:
   ```bash
