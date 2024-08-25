@@ -82,3 +82,52 @@ RAID có thể tùy chỉnh theo nhu cầu cụ thể của hệ thống và là
 - **Tăng nguy cơ mất dữ liệu**: Mặc dù RAID cung cấp khả năng dự phòng, nó không thể thay thế cho các bản sao lưu thích hợp. Nếu nhiều ổ đĩa bị lỗi đồng thời, việc mất dữ liệu vẫn có thể xảy ra.
 
 ---
+
+
+RAID (Redundant Array of Independent Disks) là một công nghệ quan trọng trong máy chủ vật lý, cung cấp các phương pháp khác nhau để cải thiện hiệu năng, dung lượng, và khả năng chịu lỗi của hệ thống lưu trữ. Dưới đây là tổng quan về các loại RAID mà bạn quan tâm:
+
+### 1. **RAID 0**
+   - **Cơ chế hoạt động**: Dữ liệu được chia nhỏ và ghi lên tất cả các ổ đĩa trong RAID, không có dự phòng.
+   - **Hiệu năng đọc**: Rất tốt, vì có thể đọc từ nhiều ổ đĩa cùng lúc.
+   - **Hiệu năng ghi**: Rất tốt, tương tự như hiệu năng đọc.
+   - **Tỷ lệ sử dụng dung lượng**: 100% (Tất cả dung lượng được sử dụng cho dữ liệu).
+   - **Khả năng chịu lỗi**: Không có. Mất một ổ đĩa sẽ dẫn đến mất tất cả dữ liệu.
+   - **Số lượng ổ đĩa tối thiểu**: 2.
+   - **Ứng dụng phổ biến**: Các ứng dụng yêu cầu hiệu năng cao, nhưng không quan trọng về an toàn dữ liệu (ví dụ: lưu trữ video tạm thời).
+
+### 2. **RAID 1**
+   - **Cơ chế hoạt động**: Dữ liệu được sao chép đồng thời trên hai ổ đĩa (mirroring).
+   - **Hiệu năng đọc**: Tốt, có thể đọc từ hai ổ đĩa song song.
+   - **Hiệu năng ghi**: Chậm hơn RAID 0, vì dữ liệu phải được ghi lên cả hai ổ đĩa.
+   - **Tỷ lệ sử dụng dung lượng**: 50% (Chỉ một nửa dung lượng tổng được sử dụng cho dữ liệu, phần còn lại là dự phòng).
+   - **Khả năng chịu lỗi**: Cao. Mất một ổ đĩa không gây mất dữ liệu.
+   - **Số lượng ổ đĩa tối thiểu**: 2.
+   - **Ứng dụng phổ biến**: Lưu trữ hệ điều hành, dữ liệu quan trọng yêu cầu an toàn cao.
+
+### 3. **RAID 5**
+   - **Cơ chế hoạt động**: Dữ liệu và thông tin dự phòng (parity) được phân bổ đồng đều trên tất cả các ổ đĩa.
+   - **Hiệu năng đọc**: Tốt, có thể đọc từ nhiều ổ đĩa cùng lúc.
+   - **Hiệu năng ghi**: Trung bình, vì phải tính toán và ghi thông tin parity.
+   - **Tỷ lệ sử dụng dung lượng**: (n-1)/n, với n là số lượng ổ đĩa (giả sử có 4 ổ đĩa, tỷ lệ là 75%).
+   - **Khả năng chịu lỗi**: Chịu được mất một ổ đĩa.
+   - **Số lượng ổ đĩa tối thiểu**: 3.
+   - **Ứng dụng phổ biến**: Lưu trữ dữ liệu, môi trường máy chủ đòi hỏi dung lượng lớn và an toàn dữ liệu.
+
+### 4. **RAID 6**
+   - **Cơ chế hoạt động**: Tương tự RAID 5, nhưng sử dụng hai bộ parity độc lập.
+   - **Hiệu năng đọc**: Tốt, tương tự RAID 5.
+   - **Hiệu năng ghi**: Chậm hơn RAID 5, vì phải tính toán và ghi hai bộ parity.
+   - **Tỷ lệ sử dụng dung lượng**: (n-2)/n (giả sử có 4 ổ đĩa, tỷ lệ là 50%).
+   - **Khả năng chịu lỗi**: Chịu được mất hai ổ đĩa.
+   - **Số lượng ổ đĩa tối thiểu**: 4.
+   - **Ứng dụng phổ biến**: Lưu trữ dữ liệu quan trọng với yêu cầu chịu lỗi cao.
+
+### 5. **RAID 10 (RAID 1+0)**
+   - **Cơ chế hoạt động**: Kết hợp giữa mirroring (RAID 1) và striping (RAID 0).
+   - **Hiệu năng đọc**: Rất tốt, tương tự RAID 0.
+   - **Hiệu năng ghi**: Tốt, chậm hơn RAID 0 nhưng tốt hơn RAID 5.
+   - **Tỷ lệ sử dụng dung lượng**: 50% (Giống RAID 1).
+   - **Khả năng chịu lỗi**: Cao. Mất một ổ đĩa trong một cặp mirror không gây mất dữ liệu.
+   - **Số lượng ổ đĩa tối thiểu**: 4.
+   - **Ứng dụng phổ biến**: Các ứng dụng đòi hỏi cả hiệu năng cao và an toàn dữ liệu, ví dụ: cơ sở dữ liệu, máy chủ ảo.
+
