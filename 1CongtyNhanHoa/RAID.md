@@ -131,3 +131,6 @@ RAID (Redundant Array of Independent Disks) là một công nghệ quan trọng 
    - **Số lượng ổ đĩa tối thiểu**: 4.
    - **Ứng dụng phổ biến**: Các ứng dụng đòi hỏi cả hiệu năng cao và an toàn dữ liệu, ví dụ: cơ sở dữ liệu, máy chủ ảo.
 
+
+
+![](https://img001.prntscr.com/file/img001/CuxmtyXGRN-rNKDANut8Jw.png)
