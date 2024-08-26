@@ -44,3 +44,20 @@ Chọn switch làm “root switch” bằng lệnh sau:
 Switch(config)# spanning-tree vlan <vlan-id> root primary
 hoặc 
 Switch(config)# spanning-tree vlan <vlan-id> priority <priority>
+```
+
+
+
+
+## EtherChannel
+![](https://img001.prntscr.com/file/img001/ZAJJBez0R1-qfytWZRiImQ.png)
+
+![](https://img001.prntscr.com/file/img001/jGg093pVSACuJc2zPwtEQA.png)
+
+![](https://img001.prntscr.com/file/img001/fdqG-F1eTpaZp3YbdqwJNw.png)
+
+![](https://img001.prntscr.com/file/img001/E5QWB5KiSZOa70MfrSwOog.png)
+
+![](https://img001.prntscr.com/file/img001/ng9s23U8TvyINAslIIJmmQ.png)
+
+![](https://img001.prntscr.com/file/img001/ZoxidwEmTiqJKyo9TdEeCA.png)
