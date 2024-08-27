@@ -52,9 +52,7 @@
 
 - VPN cho phép các máy tính truyền thông với nhau thông qua một môi trường chia sẻ như mạng Internet nhưng vẫn đảm bảo được tính riêng tư và bảo mật dữ liệu. 
 
-	![img](../images/1.1.png)
 
-	![img](../images/1.2.png)
 
 - **VPN** (***Virtual Private Network - Mạng riêng ảo***) là công nghệ cung cấp cho người dùng khả năng truy cập vào một mạng riêng (LAN) của các máy tính cá nhân và máy chủ trong mạng riêng đó từ một điểm bên ngoài của mạng đó, và không làm ảnh hưởng đến an ninh bảo mật của mạng đó.
 
@@ -88,9 +86,7 @@ Dù nghe có vẻ khá đơn giản, nhưng trên thực tế VPN lại được
 
 -	*Truy cập đến những website bị chặn giới hạn địa lý*, bỏ qua kiểm duyệt Internet, vượt tường lửa,...
 
--	*Tải tập tin*: Tải BitTorrent trên VPN sẽ giúp tăng tốc độ tải file. Điều này cũng có ích với các traffic mà ISP của bạn có thể gây trở ngại.
-
-![img](../images/1.3.png)
+-	*Tải tập tin*: Tải BitTorrent trên VPN sẽ giúp tăng tốc độ tải file. Điều này cũng có ích với các traffic mà ISP của bạn có thể gây trở ngại
 
 - Nhưng bên cạnh đó, có nhược điểm rất dễ nhận thấy như:
 
@@ -107,20 +103,15 @@ VPN là khái niệm chung cho việc thiết lập kênh truyền ảo, nhưng 
 
 - **Site to site VPN** là mô hình dùng để kết nối các hệ thống mạng ở các nơi khác nhau tạo thành một hệ thống mạng thống nhất. Ở loại kết nối này thì việc chứng thực ban đầu phụ thuộc vào thiết bị đầu cuối ở các Site, các thiết bị này hoạt động như Gateway và đây là nơi đặt nhiều chính sách bảo mật nhằm truyền dữ liệu một cách an toàn giữa các Site.
 
-	![img](../images/1.4.png)
 
-	![img](../images/1.5.png)
 
 - Trong VPN site-to-site, các host cuối không biết về kết nối VPN, chúng vẫn gửi và nhận lưu lượng TCP/IP bình thường thông qua một 'gateway' VPN. Cổng VPN có trách nhiệm đóng gói và mã hóa lưu lượng đi ra cho tất cả lưu lượng truy cập từ một trang web cụ thể. Sau đó VPN gateway sẽ gửi nó qua một đường hầm VPN qua Internet tới một cổng VPN ngang hàng tại địa điểm mục tiêu. Khi nhận được, cổng VPN ngang hàng giải tiêu đề, giải mã nội dung và chuyển tiếp gói tin tới máy chủ đích bên trong mạng riêng của nó.
 
 - VPN site-to-site có thể được sử dụng khi muốn kết nối 2 site của cùng một công ty ( 2 văn phòng với nhau). Lúc này, mọi nhân viên, thiết bị ở cả 2 văn phòng có thể trao đổi mọi thông tin với nhau thông qua kết nối VPN:
 
-	![img](../images/1.6.png)
 
 <a name = '3.2'></a>
 ## 3.2.	Remote Access VPN (Client-to-site VPN)
-
-![img](../images/1.7.png)
 
 - **Remote Access VPN (Client to site)** cho phép truy cập bất cứ lúc nào bằng Remote, mobile, và các thiết bị truyền thông của nhân viên các chi nhánh kết nối đến tài nguyên của tổ chức.
 
@@ -128,7 +119,7 @@ VPN là khái niệm chung cho việc thiết lập kênh truyền ảo, nhưng 
 
 - Loại này thường áp dụng cho nhân viên làm việc lưu động hay làm việc ở nhà muốn kết nối vào mạng công ty một cách an toàn. Cũng có thể áp dụng cho văn phòng nhỏ ở xa kết nối vào Văn phòng trung tâm của công ty.
 
-	![img](../images/1.8.png)
+
 
 - Remote Access VPN còn được xem như là dạng User-to-LAN, cho phép người dùng ở xa dùng phần mềm VPN Client kết nối với VPN Server.
 
@@ -156,7 +147,6 @@ Quá trình làm việc của VPN bao gồm các bước sau:
 - Thiết lập đường hầm là quá trình xử lý của việc đưa toàn bộ một gói tin vào một gói tin khác trước khi vận chuyển nó thông qua mạng Internet. 
 Phần bên ngoài gói tin (phần gói tin bọc gói tin chính cần chuyển) bảo vệ nội dung của nó khỏi mạng public và đảm bảo gói tin được chuyển trong một đường hầm ảo. 
 
-	![img](../images/1.10.png)
 
 - Việc xây dựng các gói tin trong một định dạng giao thức VPN cụ thể là đóng gói nó dựa trên giao thức chuyển vận trong tunnel, và chuyển giữa 2 đầu VPN, rồi cuối cùng bóc lớp đóng gói ở bên nhận. 
 	-	Cho phép người gửi đóng gói dữ liệu trong gói tin IP và tránh khỏi sự định tuyến và chuyển mạch trong Internet.
@@ -196,7 +186,7 @@ Phần bên ngoài gói tin (phần gói tin bọc gói tin chính cần chuyể
 
 - VPN dựa trên một số công nghệ như GRE, IPSec, L2F, PPTP và L2TP để thực hiện quá trình này, trong đó IPSec và PPTP là được sử dụng phổ biến hơn cả. 
 
-	![img](../images/1.11.png)
+
 
 <a name = '4.4'></a>
 ## 4.4.	Authentication – Xác thực
@@ -220,7 +210,6 @@ Quá trình xác thực thực hiện quyết định xem người gửi có ph�
 
 - Ưu điểm khi sử dụng PPTP là nó không yêu cầu hạ tầng mã khóa công cộng (Public Key Infrastructure).
 
-![img](../images/1.12.png)
 
 - PPTP sử dụng 2 kênh, một kênh điều khiển để thiết lập kết nối và một kênh để truyền dữ liệu. Kênh điều khiển được khởi tạo thông qua TCP cổng 1723. Kênh dữ liệu sử dụng giao thức GRE, giao thức IP 47. 
 
@@ -235,7 +224,6 @@ Quá trình xác thực thực hiện quyết định xem người gửi có ph�
 
 - Là một hệ thống bao gồm các giao thức để bảo mật quá trình truyền tin. IPSec được IETF (Internet Engineeering Task Fore) phát triển. IPSec là một phần bắt buộc của IPv6, có thể được lựa chọn khi sử dụng IPv4. Trong khi các chuẩn đã được thiết kết cho các phiên bản IP giống nhau. Phổ biến hiện nay là áp dụng và triển khai trên nền tảng IPv4. Giao thức IPSec thực hiện việc xác thực và mã hóa cho mỗi IP packet trong quá trình truyền thông tin, điểu khiển truy nhập, bảo vệ chống phát lại và bảo mật.
 
-![img](../images/1.13.png)
 
 - IPSec được sử dụng như một chức năng xác thực và được gọi là Authentication Hearder (AH).
 Được dùng trong việc chứng thực/mã hóa, kết hợp chức năng(authentication và integrity) gọi là Encapsulating Security Payload (ESP).
@@ -267,7 +255,7 @@ Quá trình xác thực thực hiện quyết định xem người gửi có ph�
 
 - So với PPTP thì L2TP có nhiều đặc tính mạnh và an toàn hơn.
 
-![img](../images/1.14.png)
+
 
 <a name = '5.4'></a>
 ## 5.4.	SSTP ( Secure Socket Tunneling Protocol ) 
@@ -278,8 +266,6 @@ Quá trình xác thực thực hiện quyết định xem người gửi có ph�
 
 - SSTP cũng được biết đến với tư cách là PPP trên SSL, chính vì thế nó cũng có nghĩa là bạn có thể sử dụng các cơ chế chứng thực PPP và EAP để bảo đảm cho các kết nối SSTP được an toàn hơn.
 
-![img](../images/1.15.png)
-
 SSTP sử dụng SSL để xác thực server với client và nó dựa vào PPP để xác thực client với server. Nghĩa là Client xác thực server bằng certificate và Server xác thực Client thông qua giao thức hiện có được hỗ trợ bởi PPP. Khi Client kết nối với Remote Access Server bằng cách sử dụng SSTP làm giao tác tạo lập đường hầm, SSTP thiết lập session HTTPs với server từ xa tại port 443 ở một địa chỉ URL riêng biệt. Các xác lập proxy HTTP được cấu hình thông qua IE sẽ được sử dụng để thiết lập kết nối này. Với session HTTPs, client đòi hỏi server cung cấp certificate để xác thực. Khi thiết lập quan hệ SSL hoàn tất, các session HTTP được thiết lập trên đó. Sau đó, SSTP được sử dụng để thương lượng các tham số giữa Client và Server. Khi lớp SSTP được thíêt lập, việc thương lượng SSTP được bắt đầu nhằm cung cấp cơ chế xác thực client với server và tạo đường hầm cho dữ liệu truyền qua.
 
 
@@ -288,7 +274,7 @@ SSTP sử dụng SSL để xác thực server với client và nó dựa vào PP
 
 - **OpenVPN** là phần mềm mã nguồn mở tạo các kết nối và thực hiện bảo mật mạng ở lớp 2 và 3. Sử dụng SSL/TLS để tạo ra kênh truyền bảo mật (đã được sử dụng rộng rãi trên thế giới và các hãng đang bắt đầu hỗ trợ VPN qua giao thức này như Microsoft, Cisco..). Sử dụng thư viện SSL API để thực hiện mã hóa, do đó ta có thể linh động thay đổi bằng những thuật toán khác.
 
-![img](../images/1.16.png)
+
 
 - OpenVPN là giải pháp SSL VPN mã nguồn mở mà tích hợp đầy đủ tính năng có thể cấu hình nhiều kiểu, bao gồm: VPN remote access, site-to-site, Wifi bảo mật, và các giải pháp truy cập từ xa với cân bằng tải, chuyển đổi dự phòng, và  điều khiển truy cập mạnh mẽ.
 
