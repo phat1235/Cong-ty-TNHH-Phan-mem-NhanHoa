@@ -1,4 +1,4 @@
-## 1. **Giới Thiệu về VLAN**
+## 1. **Giới Thiệu về VLAN** cơ bản để đọc chi tiết hơn một chút bạn có thể click [Here](https://github.com/phat1235/Cong-ty-TNHH-Phan-mem-NhanHoa/blob/main/1CongtyNhanHoa/networkbasic/VLAN/VLAN.md)
 
 ### VLAN (Virtual Local Area Network)
 - VLAN là một công nghệ cho phép chia một mạng vật lý thành nhiều mạng logic nhỏ hơn. Điều này giúp quản lý mạng linh hoạt hơn và tăng cường bảo mật bằng cách cách ly các nhóm người dùng hoặc thiết bị.
