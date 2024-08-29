@@ -1,7 +1,7 @@
 
 - Để có thể `Telnet/SSH` vào `SW` ta cần phải cấu hình `username` `password ` đăng nhập, số phiên làm việc tối đa có thể kết nối tại cùng một thời điểm.
 - Mà trên `SW` ta không thể cài đặt địa chỉ IP trên các `interface` của `SW` được nên ta cần phải tạo 1 VLAN  trên  `interface` kết nối với `Router`.
-- Sau đó, ta cài đặt các thông số IP cho `interface ` đó.
+- Sau đó, ta cài đặt các thông số IP cho `VLAN ` đó.
 
 Dưới đây là hướng dẫn chi tiết để cài đặt và cấu hình SSH trên một switch Cisco:
 
