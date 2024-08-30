@@ -1,4 +1,4 @@
-### 1. Reset Password switch Cisco
+ ### 1. Reset Password switch Cisco
 
 
 - Trường hợp 1: Nếu bạn muốn cấu hình lại thiết bị Switch từ một sw đã có cấu hình rồi, nhưng lại không có mật khẩu để vào switch;  ta muốn xóa cả file config
@@ -30,6 +30,8 @@ Thực hiện lab:
 
 Bước 1 – Tay nhấn vào nút MODE và tiến hành bật nguồn switch, giữ nút trong vòng khoảng 15s và thả ra
 
+![](https://img001.prntscr.com/file/img001/BB3HBgJJRaq-MN4UWqWuIQ.png)
+
 Bước 2 –Ta sẽ nhìn thấy Switch hiển thị các thông tin trong chế độ ROM như sau:
 
 ```Boot Sector Filesystem (bs) installed, fsid: 2
@@ -60,6 +62,7 @@ flashfs[0]: flashfs fsck took 10 seconds.
 …done Initializing Flash.
 switch:
 ```
+![](https://img001.prntscr.com/file/img001/kgff92FzTw-qkPGfhKu4Kw.png)
 Bước 4 – Xem nội dung flash, mặc định file cấu hình của switch được lưu với tên config.text;
 ```
 switch:dir flash:
@@ -73,6 +76,7 @@ Directory of flash:/
 3716608 bytes available (10508886 bytes used)
 switch:
 ```
+![](https://img001.prntscr.com/file/img001/KRwfQiUFTgmFDZwsf0LCpA.png)
 Bước 5: Nếu ta muốn xóa cả file cấu hình config.text này luôn thì bạn gõ lệnh
 ```
 delete flash:config.text
@@ -82,6 +86,8 @@ Còn nếu muốn chỉ thay mật khẩu mà giữ lại các cấu hình khác
 ```
 switch:rename flash:config.text flash:config.cu
 ```
+
+![](https://img001.prntscr.com/file/img001/JgOe8Q0hSfuFUUJhR5lmnA.png)
 Bước 6 – Sau khi bạn đổi tên tệp `config.text` file sang `config.cu` ta xem lại nội dung flash bằng lệnh `dir flash:`
 
 Sau khi đã đổi tên thành công ta boot vào switch bằng lệnh `boot`
