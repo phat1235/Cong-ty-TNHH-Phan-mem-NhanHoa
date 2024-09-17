@@ -1,0 +1,17 @@
+				
+### ubuntu22
+1.![](https://img001.prntscr.com/file/img001/YrQs9biQTgeUcuSqAjLCtw.png)
+2.![](https://img001.prntscr.com/file/img001/3DpoyXqiS5-agTF50JTQtg.png)
+3.![](https://img001.prntscr.com/file/img001/DI2GVEjrTbG4aHOWyZePEA.png)
+4.![](https://img001.prntscr.com/file/img001/ktMOGKs7T-yC0Tsyr1LfVA.png)
+5.![](https://img001.prntscr.com/file/img001/QbrR3ym7RvuhZ1IxmfX5dw.png)
+6.![](https://img001.prntscr.com/file/img001/EwLXtWnpRbSsM3yT0ExyOQ.png)
+7.![](https://img001.prntscr.com/file/img001/uBAjGCL3TzyTM7QWkMq7Yg.png)
+8.![](https://img001.prntscr.com/file/img001/wRleeF4cSEustJjuma7xAg.png)
+9.![](https://img001.prntscr.com/file/img001/KH5a6QbcRX6UJOxh6cA1IA.png)
+10.![](https://img001.prntscr.com/file/img001/brF2-vlRSi2bSv9BybEPgQ.png)
+11.![](https://img001.prntscr.com/file/img001/80MsLO-VRCme1yNo1Y27sw.png)
+12.![](https://img001.prntscr.com/file/img001/L5L86EExTa-8edLbO--xIw.png)
+13.![](https://img001.prntscr.com/file/img001/zLndn1sSTa-rjX9-jFAfPg.png)
+14.![](https://img001.prntscr.com/file/img001/vZulQ-TmTUOy4QHoCyzacA.png)
+15. ![](https://img001.prntscr.com/file/img001/OijQSdqTSnCRuRNrVeDwrg.png)
