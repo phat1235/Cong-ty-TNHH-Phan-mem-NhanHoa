@@ -50,9 +50,22 @@
 ![](https://img001.prntscr.com/file/img001/SsQZUqnsT5-_o8PLqQc39g.png)
 #### Cài đăt các thông số cho OS
 ![](https://img001.prntscr.com/file/img001/CkN3yncWTaOep0Va_4Fj-g.png)
+#### Bước 8: Thông tin cá nhân và cấu hình SSH
+1. Điền **thông tin cá nhân, tên user và mật khẩu**.
+2. Chọn **Install OpenSSH server** để cài OpenSSH, sau đó chọn **Done**.
 ![](https://img001.prntscr.com/file/img001/C_J1WAvGRsGf8dt0HnvmzA.png)
+
+#### Bước 9: Cài đặt gói mở rộng
+- Nếu không cần cài thêm gói mở rộng, nhấn **Done** để tiếp tục.
 ![](https://img001.prntscr.com/file/img001/KIFvXLqbTGeiADIY0MKsyg.png)   
+#### Bước 10: Cài đặt và khởi động lại
+1. Đợi hệ thống cài đặt Ubuntu.
+2. Nếu không muốn cập nhật, chọn **Cancel update and reboot** để hoàn thành quá trình cài đặt.
 ![](https://img001.prntscr.com/file/img001/0WDWpVe7RoaqWMuNeErs_w.png)
+
 ![](https://img001.prntscr.com/file/img001/ldejvJ65QDy3vckCEKRE2g.png)
+
+#### Bước 11: Đăng nhập vào hệ thống
+- Đăng nhập bằng **user** và **password** bạn đã tạo để truy cập hệ thống.
 ![](https://img001.prntscr.com/file/img001/VHv-xw6eTUGxegt0w5_iTQ.png)
 ![](https://img001.prntscr.com/file/img001/JCwyX8_3S16QgElfCr97CA.png)
