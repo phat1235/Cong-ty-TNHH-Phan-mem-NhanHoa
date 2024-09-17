@@ -1,0 +1,20 @@
+
+### Ubuntu 18 LTS
+
+![](https://img001.prntscr.com/file/img001/yeu2hCL5QN-KVckwsdfqvg.png)
+![](https://img001.prntscr.com/file/img001/798bIhRuTEyE8kzeHJ7x0g.png)
+![](https://img001.prntscr.com/file/img001/L37TrtNlRCyyVjYLU9SDyA.png)
+![](https://img001.prntscr.com/file/img001/eCTozafYTKCtzV9I3CMoyA.png)
+![](https://img001.prntscr.com/file/img001/R26f7Cf3SRaI9OprBeut6A.png)
+![](https://img001.prntscr.com/file/img001/QaFOMhL1RJu26fTWI3V11w.png)	  
+![](https://img001.prntscr.com/file/img001/GDoYhkPsR6C4cAwSq171-A.png)
+![](https://img001.prntscr.com/file/img001/41JzmyRlQq2aMr0oMKCdcg.png)
+![](https://img001.prntscr.com/file/img001/ORO3eJexT1qtsIzHrNEjWw.png)
+![](https://img001.prntscr.com/file/img001/SsQZUqnsT5-_o8PLqQc39g.png)
+![](https://img001.prntscr.com/file/img001/CkN3yncWTaOep0Va_4Fj-g.png)
+![](https://img001.prntscr.com/file/img001/C_J1WAvGRsGf8dt0HnvmzA.png)
+![](https://img001.prntscr.com/file/img001/KIFvXLqbTGeiADIY0MKsyg.png)   
+![](https://img001.prntscr.com/file/img001/0WDWpVe7RoaqWMuNeErs_w.png)
+![](https://img001.prntscr.com/file/img001/ldejvJ65QDy3vckCEKRE2g.png)
+![](https://img001.prntscr.com/file/img001/VHv-xw6eTUGxegt0w5_iTQ.png)
+![](https://img001.prntscr.com/file/img001/JCwyX8_3S16QgElfCr97CA.png)
