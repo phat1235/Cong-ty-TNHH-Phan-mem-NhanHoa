@@ -6,6 +6,7 @@
 17.	![](https://img001.prntscr.com/file/img001/HlYeOV9ITP2qW_rRcpbX2Q.png)
 - Ta thêm 1 vài account
 18.	![](https://img001.prntscr.com/file/img001/C0BuaiOIQp-2FyWIYFNvEw.png)
+19.	![](https://img001.prntscr.com/file/img001/-1pikC-3RdKrWTwNkJmdcQ.png)
 - Ta thêm 1 vài account
 - Ần Windows + R và ghi gpedit.msc sau đó mở lên
 - Đi đến Computer Configuration > Administrative Templates > Windows Components > Remote Desktop Services > Remote Desktop Session Host > Connections.
