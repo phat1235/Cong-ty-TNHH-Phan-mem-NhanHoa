@@ -4,7 +4,7 @@ Các bước cấu hình SSH trên Rockey Linux
 systemctl enable sshd
 systemctl start sshd
 ```
-Check status SSH
+#### Check status SSH
 `systemctl status sshd`:
 ![](https://img001.prntscr.com/file/img001/FsN4VQUYR7Wu5ftiyy-iHw.png)
 
@@ -16,11 +16,11 @@ Check status SSH
 ![](https://img001.prntscr.com/file/img001/lh2DdO9jQMC811167MkOmQ.png)
 ![](https://img001.prntscr.com/file/img001/RG42rs-zSGGxAd7cc2JGlw.png)
 
-5.	![](https://img001.prntscr.com/file/img001/UVFzXcKGQs-bLezfyFSMvQ.png)
-### cdcc
+### Nhưng ta vẫn đăng nhập được bằng user thường
 
 
 10.	![](https://img001.prntscr.com/file/img001/YytNK63pTBSfTlZYiqh8PA.png)
+# Tiếp theo ta cấu hình để cho phép user root đăng nhập bằng 1 địa chỉ ip tin cậy 
 ### Ta lại vào file `sshd_config` để chỉnh sửa 
 
 ![](https://img001.prntscr.com/file/img001/-wQ4ZkL1SN-w8-qhbP2Ywg.png)
@@ -32,3 +32,4 @@ Check status SSH
 	Nhưng vẫn đăng nhập bằng tài khoản khác được!
 ### Đã bị cấm khi root đăng nhập bới IP khác
 16.	![](https://img001.prntscr.com/file/img001/TUNY_jTGRnO4ZlynAPDQUQ.png)
+
