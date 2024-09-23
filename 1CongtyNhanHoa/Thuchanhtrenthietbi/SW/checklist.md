@@ -2,7 +2,7 @@
 
 | SLNo | Guidance                                                                                                          | Compliance | Link                                      |
 |------|-------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------|
-| 1    | Check if the latest firmware is used.                                                                            |            | [Firmware Update](#facebook)                     |
+| 1    | Check if the latest firmware is used.                                                                            |            | [Firmware Update](#https://facebook.com)                     |
 | 2    | Check the switch's user guide for security features and see if the required ones have been implemented properly. |            | [User Guide](#)                          |
 | 3    | Create an Enable Secret Password and Encrypt Passwords on the device.                                           |            | [Enable Secret Password](#)              |
 | 4    | Use an external AAA server for User Authentication.                                                              |            | [AAA Server Configuration](#)            |
