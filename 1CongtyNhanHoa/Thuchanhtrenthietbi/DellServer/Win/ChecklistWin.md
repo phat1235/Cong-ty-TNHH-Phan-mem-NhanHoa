@@ -53,7 +53,10 @@
 
 ![](https://img001.prntscr.com/file/img001/Ed7TD5s7TEKsyjiRUUCPBQ.png)
 - Ta chỉ cho phép ip  .105 - .106 remote tới server
+
 33.	![](https://img001.prntscr.com/file/img001/4-fPNvSHSyqBGMF7z17MOA.png)
+
+![](https://img001.prntscr.com/file/img001/qbvqG_x2Qu2GWdlIndh6Kw.png)
 - Ta thực hiện connect lại xem
 34.	![](https://img001.prntscr.com/file/img001/2yIXZA3wTFOf--3Ldj-BCw.png)
 - Và đã chặn thành công, vì tôi đã đổi địa chỉ ip của máy tôi sang IP khác
