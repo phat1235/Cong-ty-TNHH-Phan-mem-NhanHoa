@@ -61,3 +61,9 @@
 34.	![](https://img001.prntscr.com/file/img001/2yIXZA3wTFOf--3Ldj-BCw.png)
 - Và đã chặn thành công, vì tôi đã đổi địa chỉ ip của máy tôi sang IP khác
 35.	![](https://img001.prntscr.com/file/img001/TgKHOOZMReyy-9Oc8ptVqQ.png)
+
+
+### Ảnh dưới đây thể hiện rằng khi tôi đã cấu hình tối đa 2 sesstion thì chỉ có 2 sesstion được phép đồng thời hoạt động
+
+![](https://img001.prntscr.com/file/img001/zCbGjtwZQK6plRdj10-FLA.png)
+![](https://img001.prntscr.com/file/img001/lsmHatb9T1WtRnbK22UU1g.png)
