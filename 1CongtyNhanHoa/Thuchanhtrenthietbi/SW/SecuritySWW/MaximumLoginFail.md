@@ -63,9 +63,9 @@ write memory
 show running-config | include username
 show running-config | include login block-for
 ```
-https://img001.prntscr.com/file/img001/Ub40EQKMTKeRNslr9IAmEA.png
-https://img001.prntscr.com/file/img001/rl1jBkyEQ_eDE0X2lCJVIA.png
-https://img001.prntscr.com/file/img001/qY-w1HmERx6BcyNtPfS75A.png
-https://img001.prntscr.com/file/img001/538pPUJlSemici-WjirGbA.png
-https://img001.prntscr.com/file/img001/f_uh262MTFSkgStifIN7Pg.png
-https://img001.prntscr.com/file/img001/3UjQsfyCR3aMRI3GrZ0WQQ.png
+![](https://img001.prntscr.com/file/img001/Ub40EQKMTKeRNslr9IAmEA.png)
+![](https://img001.prntscr.com/file/img001/rl1jBkyEQ_eDE0X2lCJVIA.png)
+![](https://img001.prntscr.com/file/img001/qY-w1HmERx6BcyNtPfS75A.png)
+![](https://img001.prntscr.com/file/img001/538pPUJlSemici-WjirGbA.png)
+![](https://img001.prntscr.com/file/img001/f_uh262MTFSkgStifIN7Pg.png)
+![](https://img001.prntscr.com/file/img001/3UjQsfyCR3aMRI3GrZ0WQQ.png)
