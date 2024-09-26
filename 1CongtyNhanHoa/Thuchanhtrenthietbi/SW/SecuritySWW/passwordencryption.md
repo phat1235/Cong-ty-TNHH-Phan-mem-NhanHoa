@@ -1,6 +1,5 @@
 
-
-	1. **Chuyển sang chế độ cấu hình**:
+1. **Chuyển sang chế độ cấu hình**:
 	   ```bash
 	   enable
 	   configure terminal
