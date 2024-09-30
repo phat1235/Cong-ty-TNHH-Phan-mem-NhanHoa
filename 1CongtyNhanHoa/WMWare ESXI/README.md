@@ -193,7 +193,7 @@
    - vSphere ESX Agent Manager  
    - Monitoring Agent Health Status  
    - Resolve Agency Issues  
-10. Managing Virtual Machines  
+1. Managing Virtual Machines 
    - Installing a Guest Operating System  
    - Using PXE with Virtual Machines  
    - Install a Guest Operating System from Media  
@@ -201,8 +201,6 @@
    - Customizing Guest Operating Systems  
    - Guest Operating System Customization Requirements  
    - Create a vCenter Server Application to Generate Computer Names and IP Addresses  
-
-
    - Customize Windows During Cloning or Deployment  
    - Customize Linux During Cloning or Deployment  
    - Apply a Customization Specification to an Existing Virtual Machine  
@@ -246,18 +244,18 @@
    - Migrate a Virtual Machine to New Storage in the vSphere Web Client  
    - Migrate a Virtual Machine to a New Compute Resource and Storage  
    - Migrate a Virtual Machine to a New Compute Resource and Storage in the vSphere Web Client  
-11. Upgrading Virtual Machines  
+1. Upgrading Virtual Machines  
    - Downtime for Upgrading Virtual Machines  
    - Upgrade the Compatibility of a Virtual Machine Manually  
    - Schedule a Compatibility Upgrade for a Virtual Machine  
-12. Required Privileges for Common Tasks  
-13. Troubleshooting Overview  
+1. Required Privileges for Common Tasks  
+1. Troubleshooting Overview  
    - Guidelines for Troubleshooting  
    - Identifying Symptoms  
    - Defining the Problem Space  
    - Testing Possible Solutions  
    - Troubleshooting with Logs  
-14. Troubleshooting Virtual Machines  
+1. Troubleshooting Virtual Machines  
    - Troubleshooting USB Passthrough Devices  
    - Error Message When You Try to Migrate Virtual Machine with USB Devices Attached  
    - Cannot Copy Data From an ESXi Host to a USB Device That Is Connected to the Host  
