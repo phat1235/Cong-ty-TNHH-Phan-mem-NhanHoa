@@ -1,0 +1,265 @@
+# Contents
+
+**About vSphere Virtual Machine Administration**  
+1. Updated Information  
+2. Introduction to VMware vSphere Virtual Machines  
+   - Virtual Machine Files  
+   - Virtual Machines and the Virtual Infrastructure  
+   - Virtual Machine Lifecycle  
+   - Virtual Machine Components  
+   - Virtual Machine Hardware Available to vSphere Virtual Machines  
+   - Virtual Machine Options  
+   - The vSphere Client and the vSphere Web Client  
+   - Where to Go From Here  
+3. Deploying Virtual Machines  
+   - Create a Virtual Machine with the New Virtual Machine Wizard  
+   - Clone a Virtual Machine to a Template  
+   - Clone a Virtual Machine to a Template in the vSphere Web Client  
+   - Deploy a Virtual Machine from a Template  
+   - Deploy a Virtual Machine from a Template in the vSphere Web Client  
+   - Clone an Existing Virtual Machine  
+   - Clone an Existing Virtual Machine in the vSphere Web Client  
+   - Cloning a Virtual Machine with Instant Clone  
+   - Clone a Template to a Template  
+   - Clone a Template to a Template in the vSphere Web Client  
+   - Convert a Template to a Virtual Machine  
+4. Deploying OVF and OVA Templates  
+   - OVF and OVA File Formats and Templates  
+   - Deploy an OVF or OVA Template  
+   - Export an OVF Template  
+   - Browse VMware Virtual Appliance Marketplace  
+5. Using Content Libraries  
+   - Hierarchical Inheritance of Permissions for Content Libraries  
+   - Content Library Administrator Role  
+   - Create a Library  
+   - Edit a Content Library  
+   - Managing a Publisher Local Library  
+   - Create a Subscription for a Local Library  
+   - Publish the Contents of a Library to a Subscriber  
+   - Publish a Single Template to a Subscription  
+   - Delete a Subscription  
+   - Managing a Subscribed Library  
+   - Synchronize a Subscribed Content Library  
+   - Synchronize a Library Item in a Subscribed Library  
+   - Populating Libraries with Content  
+   - Import Items to a Content Library  
+   - Clone a vApp to a Template in a Content Library  
+   - Clone a Virtual Machine or a Virtual Machine Template to a Template in a Content Library  
+   - Clone Library Items from One Library to Another Library  
+   - Working with Items in a Library  
+   - Templates in Content Libraries  
+   - Update a Content Library Item  
+   - Export an Item from a Content Library to Your Local Computer  
+   - Clone Library Items from One Library to Another Library  
+   - Edit a Content Library Item  
+   - Delete a Content Library Item or Item Content  
+   - Creating Virtual Machines and vApps from Templates in a Content Library  
+   - Deploy a Virtual Machine from an OVF Template in a Content Library  
+   - Deploy a Virtual Machine From an OVF Template in a Content Library in the vSphere Web Client  
+   - Deploy a Virtual Machine from a VM Template in a Content Library  
+   - Create New vApp From a Template in a Content Library  
+6. Configuring Virtual Machine Hardware  
+   - Virtual Machine Compatibility  
+   - Set the Default Compatibility for Virtual Machine Creation  
+   - Schedule a Compatibility Upgrade for a Single Virtual Machine  
+   - Change the Default Virtual Machine Compatibility Setting  
+   - Hardware Features Available with Virtual Machine Compatibility Settings  
+   - Virtual CPU Configuration  
+   - Virtual CPU Limitations  
+   - Configuring Multicore Virtual CPUs  
+   - Enable CPU Hot Add  
+   - Change the Number of Virtual CPUs  
+   - Allocate CPU Resources  
+   - Change CPU Identification Mask Settings  
+   - Expose VMware Hardware Assisted Virtualization  
+   - Activate Virtual CPU Performance Counters  
+   - Configure Processor Scheduling Affinity  
+   - Change CPU/MMU Virtualization Settings  
+   - Virtual Memory Configuration  
+   - Change the Memory Configuration  
+   - Allocate Memory Resources  
+   - Change Memory Hot Add Settings  
+   - Managing Persistent Memory  
+   - Virtual Disk Configuration  
+   - About Virtual Disk Provisioning Policies  
+   - Large Capacity Virtual Disk Conditions and Limitations  
+   - Change the Virtual Disk Configuration  
+   - Use Disk Shares to Prioritize Virtual Machines  
+   - Configure Flash Read Cache for a Virtual Machine  
+   - Determine the Virtual Disk Format and Convert a Virtual Disk from the Thin Provision Format to a Thick Provision Format  
+   - Add a Hard Disk to a Virtual Machine  
+   - SCSI and SATA Storage Controller Conditions, Limitations, and Compatibility  
+   - Add a SATA Controller  
+   - Add a SCSI Controller to a Virtual Machine  
+   - Add a Paravirtualized SCSI Adapter  
+   - Add an NVMe Controller  
+   - Change the SCSI Controller Configuration  
+   - Virtual Machine Network Configuration  
+   - Network Adapter Basics  
+   - Network Adapters and Legacy Virtual Machines  
+   - Change the Virtual Machine Network Adapter Configuration  
+   - Add a Network Adapter to a Virtual Machine  
+   - Parallel and Serial Port Configuration  
+   - Other Virtual Machine Device Configuration  
+   - Change the CD/DVD Drive Configuration  
+   - Add or Modify a Virtual Machine CD or DVD Drive  
+   - Change the Floppy Drive Configuration in the vSphere Web Client  
+   - Add a Floppy Drive to a Virtual Machine in the vSphere Web Client  
+   - Add and Configure a SCSI Device  
+   - Add a PCI Device  
+   - Configuring 3D Graphics  
+   - Add an NVIDIA GRID vGPU to a Virtual Machine  
+   - USB Configuration from an ESXi Host to a Virtual Machine  
+   - USB Autoconnect Feature  
+   - vSphere Features Available with USB Passthrough  
+   - Configuring USB Devices for vMotion  
+   - Avoiding Data Loss with USB Devices  
+   - Connecting USB Devices to an ESXi Host  
+   - Add USB Devices to an ESXi Host  
+   - Add a USB Controller to a Virtual Machine  
+   - Add USB Devices from an ESXi Host to a Virtual Machine  
+   - Remove USB Devices That Are Connected Through an ESXi Host  
+   - Remove USB Devices from an ESXi Host  
+   - USB Configuration from a Client Computer to a Virtual Machine  
+   - Connecting USB Devices to a Client Computer  
+   - Connect a USB Device to a Client Computer  
+   - Add a USB Controller to a Virtual Machine  
+   - Add USB Devices from a Client Computer to a Virtual Machine  
+   - Remove USB Devices That Are Connected Through a Client Computer  
+   - Remove a USB Controller from a Virtual Machine  
+   - Add a Shared Smart Card Reader to Virtual Machines  
+   - Securing Virtual Machines with Virtual Trusted Platform Module  
+   - Enable Virtual Trusted Platform Module for an Existing Virtual Machine  
+   - Remove Virtual Trusted Platform Module from a Virtual Machine  
+7. Configuring Virtual Machine Options  
+   - Virtual Machine Options Overview  
+   - General Virtual Machine Options  
+   - Change the Virtual Machine Name  
+   - View the Virtual Machine Configuration and Working File Location  
+   - Change the Configured Guest Operating System  
+   - Configuring User Mappings on Guest Operating Systems  
+   - View Existing SSO User Mappings  
+   - Add SSO Users to Guest Operating Systems  
+   - Remove SSO Users from Guest Operating Systems  
+   - VMware Remote Console Options  
+   - Change the Virtual Machine Console Options for Remote Users  
+   - Configure Virtual Machine Encryption Options  
+   - Encrypt an Existing Virtual Machine or Virtual Disk  
+   - Decrypt an Encrypted Virtual Machine or Virtual Disk  
+   - Virtual Machine Power Management Options  
+   - Manage Power Management Settings for a Virtual Machine  
+   - Configuring VMware Tools Options  
+   - Configure the Virtual Machine Power States  
+   - Virtualization Based Security  
+   - Enable Virtualization-based Security on an Existing Virtual Machine  
+   - Enable Virtualization-based Security on the Guest Operating System  
+   - Deactivate Virtualization-based Security  
+   - Identify VBS-Enabled Virtual Machines  
+   - Configure Virtual Machine Boot Options  
+   - Activate or Deactivate UEFI Secure Boot for a Virtual Machine  
+   - Delay the Boot Sequence  
+   - Configuring Virtual Machine Advanced Options  
+   - Deactivating Virtual Machine Acceleration  
+   - Enable Virtual Machine Logging  
+   - Configure Virtual Machine Debugging and Statistics  
+   - Change the Swap File Location  
+   - Edit Configuration File Parameters  
+   - Configure Fibre Channel NPIV Settings  
+8. Managing Multi-Tiered Applications with vSphere vApp  
+   - Create a vApp  
+   - Perform vApp Power Operations  
+   - Create or Add an Object to a vApp  
+   - Clone a vApp  
+   - Edit vApp Notes  
+   - Configure vApp Properties  
+   - Configure vApp Properties in the vSphere Web Client  
+   - Edit vApp Settings  
+   - Configure vApp CPU and Memory Resources  
+   - View Unrecognized OVF Sections in the vSphere Web Client  
+   - Configure vApp IP Allocation Policy  
+   - Configure vApp Startup and Shutdown Options  
+   - Configure vApp Product Properties  
+   - View vApp License Agreements  
+   - Add a Network Protocol Profile  
+   - Associate a Port Group with a Network Protocol Profile in the vSphere Web Client  
+   - Assign a Port Group or Network to a Network Protocol Profile  
+   - Use a Network Protocol Profile to Allocate IP Addresses to a Virtual Machine or vApp  
+   - Virtual Machine vApp Options  
+   - Enable vApp Options for a Virtual Machine  
+   - Edit Application Properties and OVF Deployment Options for a Virtual Machine  
+   - OVF Authoring Options for a Virtual Machine  
+9. Monitoring Solutions with the vCenter Solutions Manager  
+   - View Solutions  
+   - vSphere ESX Agent Manager  
+   - Monitoring Agent Health Status  
+   - Resolve Agency Issues  
+10. Managing Virtual Machines  
+   - Installing a Guest Operating System  
+   - Using PXE with Virtual Machines  
+   - Install a Guest Operating System from Media  
+   - Upload ISO Image Installation Media for a Guest Operating System  
+   - Customizing Guest Operating Systems  
+   - Guest Operating System Customization Requirements  
+   - Create a vCenter Server Application to Generate Computer Names and IP Addresses  
+
+
+   - Customize Windows During Cloning or Deployment  
+   - Customize Linux During Cloning or Deployment  
+   - Apply a Customization Specification to an Existing Virtual Machine  
+   - Creating and Managing Customization Specifications  
+   - Edit Virtual Machine Startup and Shutdown Settings in the vSphere Web Client  
+   - Edit Virtual Machine Startup and Shutdown Settings  
+   - Install the VMware Enhanced Authentication Plug-in  
+   - Using a Virtual Machine Console  
+   - Install the VMware Remote Console Application  
+   - Start the VMware Remote Console Application  
+   - Launch the Web Console  
+   - Answer Virtual Machine Questions  
+   - Removing and Reregistering VMs and VM Templates  
+   - Adding Existing Virtual Machines to vCenter Server  
+   - Remove VMs or VM Templates from vCenter Server or from the Datastore  
+   - Register a VM or VM Template with vCenter Server  
+   - Managing Virtual Machine Templates  
+   - Change the Template Name  
+   - Deleting Templates  
+   - Using Snapshots To Manage Virtual Machines  
+   - Snapshot Files  
+   - Snapshot Limitations  
+   - Managing Snapshots  
+   - Taking Snapshots of a Virtual Machine  
+   - Restoring Snapshots  
+   - Delete a Snapshot  
+   - Consolidate Snapshots  
+   - Enhanced vMotion Compatibility as a Virtual Machine Attribute  
+   - Configure the EVC Mode of a Virtual Machine  
+   - Determine the EVC Mode of a Virtual Machine  
+   - Virtual Machine Storage DRS Rules  
+   - Add a VMDK Affinity Rule  
+   - Add a VMDK Anti-Affinity Rule  
+   - Add a VM Anti-Affinity Rule  
+   - Migrating Virtual Machines  
+   - Virtual Machine Conditions and Limitations for vMotion  
+   - Migrate a Powered Off or Suspended Virtual Machine  
+   - Migrate a Powered Off or Suspended Virtual Machine in the vSphere Web Client  
+   - Migrate a Virtual Machine to a New Compute Resource  
+   - Migrate a Virtual Machine to New Storage  
+   - Migrate a Virtual Machine to New Storage in the vSphere Web Client  
+   - Migrate a Virtual Machine to a New Compute Resource and Storage  
+   - Migrate a Virtual Machine to a New Compute Resource and Storage in the vSphere Web Client  
+11. Upgrading Virtual Machines  
+   - Downtime for Upgrading Virtual Machines  
+   - Upgrade the Compatibility of a Virtual Machine Manually  
+   - Schedule a Compatibility Upgrade for a Virtual Machine  
+12. Required Privileges for Common Tasks  
+13. Troubleshooting Overview  
+   - Guidelines for Troubleshooting  
+   - Identifying Symptoms  
+   - Defining the Problem Space  
+   - Testing Possible Solutions  
+   - Troubleshooting with Logs  
+14. Troubleshooting Virtual Machines  
+   - Troubleshooting USB Passthrough Devices  
+   - Error Message When You Try to Migrate Virtual Machine with USB Devices Attached  
+   - Cannot Copy Data From an ESXi Host to a USB Device That Is Connected to the Host  
+   - Recover Orphaned Virtual Machines  
+   - Virtual Machine Does Not Power On After Cloning or Deploying from Template
