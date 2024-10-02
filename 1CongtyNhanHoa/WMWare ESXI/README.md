@@ -5,7 +5,7 @@
 2. Introduction to VMware vSphere Virtual Machines  
    - [Virtual Machine Files](https://github.com/phat1235/Cong-ty-TNHH-Phan-mem-NhanHoa/blob/main/1CongtyNhanHoa/WMWare%20ESXI/Virtual%20Machine%20Files.md)
    - [Virtual Machines and the Virtual Infrastructure]()  
-   - [Virtual Machine Lifecycle  ]()
+   - [Virtual Machine Lifecycle  ](https://github.com/phat1235/Cong-ty-TNHH-Phan-mem-NhanHoa/blob/main/1CongtyNhanHoa/WMWare%20ESXI/Virtual%20Machine%20Lifecycle.md)
    - [Virtual Machine Components  ]()
    - [Virtual Machine Hardware Available to vSphere Virtual Machines  ]()
    - [Virtual Machine Options  ]()
