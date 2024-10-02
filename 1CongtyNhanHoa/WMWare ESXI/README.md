@@ -13,14 +13,10 @@
    - [Where to Go From Here  ]()
 3. Deploying Virtual Machines  
    - [Create a Virtual Machine with the New Virtual Machine Wizard  ]()
-   - [Clone a Virtual Machine to a Template  ]()
    - [Clone a Virtual Machine to a Template in the vSphere Web Client  ]()
-   - [Deploy a Virtual Machine from a Template  ]()
    - [Deploy a Virtual Machine from a Template in the vSphere Web Client  ]()
-   - [Clone an Existing Virtual Machine  ]()
    - [Clone an Existing Virtual Machine in the vSphere Web Client  ]()
    - [Cloning a Virtual Machine with Instant Clone  ]()
-   - [Clone a Template to a Template  ]()
    - [Clone a Template to a Template in the vSphere Web Client  ]()
    - [Convert a Template to a Virtual Machine  ]()
 4. Deploying OVF and OVA Templates  
