@@ -3,7 +3,7 @@
 **About vSphere Virtual Machine Administration**  
 1. Updated Information  
 2. Introduction to VMware vSphere Virtual Machines  
-   - [Virtual Machine Files](https://github.com/phat1235/Cong-ty-TNHH-Phan-mem-NhanHoa/tree/main/1CongtyNhanHoa/WMWare%20ESXI)
+   - [Virtual Machine Files](https://github.com/phat1235/Cong-ty-TNHH-Phan-mem-NhanHoa/blob/main/1CongtyNhanHoa/WMWare%20ESXI/Virtual%20Machine%20Files.md)
    - [Virtual Machines and the Virtual Infrastructure]()  
    - [Virtual Machine Lifecycle  ]()
    - [Virtual Machine Components  ]()
