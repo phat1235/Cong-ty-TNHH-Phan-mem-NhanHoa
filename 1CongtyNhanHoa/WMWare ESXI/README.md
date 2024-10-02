@@ -3,78 +3,78 @@
 **About vSphere Virtual Machine Administration**  
 1. Updated Information  
 2. Introduction to VMware vSphere Virtual Machines  
-   - Virtual Machine Files  
-   - Virtual Machines and the Virtual Infrastructure  
-   - Virtual Machine Lifecycle  
-   - Virtual Machine Components  
-   - Virtual Machine Hardware Available to vSphere Virtual Machines  
-   - Virtual Machine Options  
-   - The vSphere Client and the vSphere Web Client  
-   - Where to Go From Here  
+   - [Virtual Machine Files]()
+   - [Virtual Machines and the Virtual Infrastructure]()  
+   - [Virtual Machine Lifecycle  ]()
+   - [Virtual Machine Components  ]()
+   - [Virtual Machine Hardware Available to vSphere Virtual Machines  ]()
+   - [Virtual Machine Options  ]()
+   - [The vSphere Client and the vSphere Web Client  ]()
+   - [Where to Go From Here  ]()
 3. Deploying Virtual Machines  
-   - Create a Virtual Machine with the New Virtual Machine Wizard  
-   - Clone a Virtual Machine to a Template  
-   - Clone a Virtual Machine to a Template in the vSphere Web Client  
-   - Deploy a Virtual Machine from a Template  
-   - Deploy a Virtual Machine from a Template in the vSphere Web Client  
-   - Clone an Existing Virtual Machine  
-   - Clone an Existing Virtual Machine in the vSphere Web Client  
-   - Cloning a Virtual Machine with Instant Clone  
-   - Clone a Template to a Template  
-   - Clone a Template to a Template in the vSphere Web Client  
-   - Convert a Template to a Virtual Machine  
+   - [Create a Virtual Machine with the New Virtual Machine Wizard  ]()
+   - [Clone a Virtual Machine to a Template  ]()
+   - [Clone a Virtual Machine to a Template in the vSphere Web Client  ]()
+   - [Deploy a Virtual Machine from a Template  ]()
+   - [Deploy a Virtual Machine from a Template in the vSphere Web Client  ]()
+   - [Clone an Existing Virtual Machine  ]()
+   - [Clone an Existing Virtual Machine in the vSphere Web Client  ]()
+   - [Cloning a Virtual Machine with Instant Clone  ]()
+   - [Clone a Template to a Template  ]()
+   - [Clone a Template to a Template in the vSphere Web Client  ]()
+   - [Convert a Template to a Virtual Machine  ]()
 4. Deploying OVF and OVA Templates  
-   - OVF and OVA File Formats and Templates  
-   - Deploy an OVF or OVA Template  
-   - Export an OVF Template  
-   - Browse VMware Virtual Appliance Marketplace  
+   - [OVF and OVA File Formats and Templates  ]()
+   - [Deploy an OVF or OVA Template  ]()
+   - [Export an OVF Template  ]()
+   - [Browse VMware Virtual Appliance Marketplace ]() 
 5. Using Content Libraries  
-   - Hierarchical Inheritance of Permissions for Content Libraries  
-   - Content Library Administrator Role  
-   - Create a Library  
-   - Edit a Content Library  
-   - Managing a Publisher Local Library  
-   - Create a Subscription for a Local Library  
-   - Publish the Contents of a Library to a Subscriber  
-   - Publish a Single Template to a Subscription  
-   - Delete a Subscription  
-   - Managing a Subscribed Library  
-   - Synchronize a Subscribed Content Library  
-   - Synchronize a Library Item in a Subscribed Library  
-   - Populating Libraries with Content  
-   - Import Items to a Content Library  
-   - Clone a vApp to a Template in a Content Library  
-   - Clone a Virtual Machine or a Virtual Machine Template to a Template in a Content Library  
-   - Clone Library Items from One Library to Another Library  
-   - Working with Items in a Library  
-   - Templates in Content Libraries  
-   - Update a Content Library Item  
-   - Export an Item from a Content Library to Your Local Computer  
-   - Clone Library Items from One Library to Another Library  
-   - Edit a Content Library Item  
-   - Delete a Content Library Item or Item Content  
-   - Creating Virtual Machines and vApps from Templates in a Content Library  
-   - Deploy a Virtual Machine from an OVF Template in a Content Library  
-   - Deploy a Virtual Machine From an OVF Template in a Content Library in the vSphere Web Client  
-   - Deploy a Virtual Machine from a VM Template in a Content Library  
-   - Create New vApp From a Template in a Content Library  
+   - [Hierarchical Inheritance of Permissions for Content Libraries]()  
+   - [Content Library Administrator Role  ]()
+   - [Create a Library  ]()
+   - [Edit a Content Library  ]()
+   - [Managing a Publisher Local Library  ]()
+   - [Create a Subscription for a Local Library]()  
+   - [Publish the Contents of a Library to a Subscriber ]() 
+   - [Publish a Single Template to a Subscription  ]()
+   - [Delete a Subscription ]() 
+   - [Managing a Subscribed Library  ]()
+   - [Synchronize a Subscribed Content Library ]() 
+   - [Synchronize a Library Item in a Subscribed Library ]() 
+   - [Populating Libraries with Content ]() 
+   - [Import Items to a Content Library]()  
+   - [Clone a vApp to a Template in a Content Library  ]()
+   - [Clone a Virtual Machine or a Virtual Machine Template to a Template in a Content Library  ]()
+   - [Clone Library Items from One Library to Another Library ]() 
+   - [Working with Items in a Library  ]()
+   - [Templates in Content Libraries  ]()
+   - [Update a Content Library Item  ]()
+   - [Export an Item from a Content Library to Your Local Computer]()  
+   - [Clone Library Items from One Library to Another Library  ]()
+   - [Edit a Content Library Item  ]()
+   - [Delete a Content Library Item or Item Content  ]()
+   - [Creating Virtual Machines and vApps from Templates in a Content Library  ]()
+   - [Deploy a Virtual Machine from an OVF Template in a Content Library ]() 
+   - [Deploy a Virtual Machine From an OVF Template in a Content Library in the vSphere Web Client ]() 
+   - [Deploy a Virtual Machine from a VM Template in a Content Library  ]()
+   - [Create New vApp From a Template in a Content Library  ]()
 6. Configuring Virtual Machine Hardware  
-   - Virtual Machine Compatibility  
-   - Set the Default Compatibility for Virtual Machine Creation  
-   - Schedule a Compatibility Upgrade for a Single Virtual Machine  
-   - Change the Default Virtual Machine Compatibility Setting  
-   - Hardware Features Available with Virtual Machine Compatibility Settings  
-   - Virtual CPU Configuration  
-   - Virtual CPU Limitations  
-   - Configuring Multicore Virtual CPUs  
-   - Enable CPU Hot Add  
-   - Change the Number of Virtual CPUs  
-   - Allocate CPU Resources  
-   - Change CPU Identification Mask Settings  
-   - Expose VMware Hardware Assisted Virtualization  
-   - Activate Virtual CPU Performance Counters  
-   - Configure Processor Scheduling Affinity  
-   - Change CPU/MMU Virtualization Settings  
+   - [Virtual Machine Compatibility  
+   - [Set the Default Compatibility for Virtual Machine Creation  
+   - [Schedule a Compatibility Upgrade for a Single Virtual Machine  
+   - [Change the Default Virtual Machine Compatibility Setting  
+   - [Hardware Features Available with Virtual Machine Compatibility Settings  
+   - [Virtual CPU Configuration  
+   - [Virtual CPU Limitations  
+   - [Configuring Multicore Virtual CPUs  
+   - [Enable CPU Hot Add  
+   - [Change the Number of Virtual CPUs  
+   - [Allocate CPU Resources  
+   - [Change CPU Identification Mask Settings  
+   - [Expose VMware Hardware Assisted Virtualization  
+   - [Activate Virtual CPU Performance Counters  
+   - [Configure Processor Scheduling Affinity  
+   - [Change CPU/MMU Virtualization Settings  
    - Virtual Memory Configuration  
    - Change the Memory Configuration  
    - Allocate Memory Resources  
