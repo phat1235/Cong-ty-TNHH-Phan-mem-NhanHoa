@@ -17,7 +17,7 @@
    - [Deploy a Virtual Machine from a Template in the vSphere Web Client  ]()
    - [Clone an Existing Virtual Machine in the vSphere Web Client  ]()
    - [Cloning a Virtual Machine with Instant Clone  ]()
-   - [Clone a Template to a Template in the vSphere Web Client  ]()
+   - [Clone a Template to a Template in the vSphere Web Client  ](https://github.com/phat1235/Cong-ty-TNHH-Phan-mem-NhanHoa/blob/main/1CongtyNhanHoa/WMWare%20ESXI/Clone%20a%20Template%20to%20a%20Template%20in%20the%20vSphere%20Web%20Client.md)
    - [Convert a Template to a Virtual Machine  ]()
 4. Deploying OVF and OVA Templates  
    - [OVF and OVA File Formats and Templates  ]()
