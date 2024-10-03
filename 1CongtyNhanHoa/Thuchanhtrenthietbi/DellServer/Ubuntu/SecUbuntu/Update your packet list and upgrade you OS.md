@@ -58,3 +58,21 @@ Lệnh `sudo systemctl status unattended-upgrades.service` dùng để kiểm tr
 ### 3. **Chức năng của dịch vụ `unattended-upgrades`**:
 - Dịch vụ **unattended-upgrades** tự động tải và cài đặt các bản cập nhật bảo mật và bản vá lỗi mà không cần người dùng thực hiện thủ công. Điều này giúp đảm bảo rằng hệ thống của bạn luôn được bảo vệ khỏi các lỗ hổng bảo mật mới nhất.
 Khi kiểm tra trạng thái và nhận được kết quả `active (running)` như trên, điều đó nghĩa là dịch vụ đang hoạt động bình thường, và hệ thống của bạn sẽ tự động cập nhật các bản vá lỗi mà không cần can thiệp.
+
+---
+Lệnh `sudo dpkg-reconfigure --priority=low unattended-upgrades` 
+
+
+### 1. **`dpkg-reconfigure`**:
+   - Đây là lệnh được sử dụng để cấu hình lại một gói đã được cài đặt trên hệ thống. Nó cho phép bạn thiết lập lại các tùy chọn cấu hình của gói mà bạn đã cài đặt, thường là thông qua một giao diện tương tác.
+
+### 2. **`--priority=low`**:
+
+   - `low` nghĩa là bạn sẽ thấy tất cả các câu hỏi, kể cả những câu hỏi ít quan trọng hoặc nâng cao. Điều này hữu ích nếu bạn muốn kiểm soát chi tiết hơn các tùy chọn cấu hình của gói.
+
+### 3. **`unattended-upgrades`**:
+   - Đây là tên gói bạn đang cấu hình. Gói **`unattended-upgrades`** tự động cài đặt các bản cập nhật bảo mật và các bản vá lỗi mà không yêu cầu sự can thiệp của người dùng. Điều này giúp đảm bảo rằng hệ thống luôn được bảo vệ trước các lỗ hổng bảo mật mới nhất.
+
+### Mục đích của lệnh:
+Lệnh này dùng để cấu hình lại gói `unattended-upgrades`, cho phép bạn kiểm soát các cài đặt liên quan đến việc tự động cập nhật hệ thống. Bằng cách sử dụng tùy chọn `--priority=low`, bạn sẽ được hỏi tất cả các câu hỏi cấu hình chi tiết để điều chỉnh hoạt động của tính năng cập nhật tự động này theo ý muốn.
+
