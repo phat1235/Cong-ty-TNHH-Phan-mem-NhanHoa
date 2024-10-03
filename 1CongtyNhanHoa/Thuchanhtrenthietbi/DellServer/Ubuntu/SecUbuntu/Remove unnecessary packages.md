@@ -47,3 +47,5 @@ Nếu không có kết quả trả về, có nghĩa là các gói đã được 
 ### Lưu ý
 
 - Trước khi xóa bất kỳ gói nào, hãy đảm bảo rằng chúng thực sự không cần thiết cho hệ thống của bạn.
+
+  ![](https://img001.prntscr.com/file/img001/48Rx9F0pRRmGOXUyI5hP4g.png)
