@@ -1,5 +1,5 @@
 Lệnh `find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;` được sử dụng để tìm các thư mục có quyền ghi cho nhóm hoặc người dùng khác trên hệ thống. 
-
+![](https://img001.prntscr.com/file/img001/Xxy2gNb4TRuR4osZaQws1Q.png)
 ### Giải thích:
 
 1. **`find /`**:
@@ -33,3 +33,43 @@ Lệnh `find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;` đư
 
 ### =>>
 Lệnh này tìm tất cả các thư mục trên hệ thống có quyền ghi cho nhóm hoặc người dùng khác và hiển thị thông tin chi tiết về chúng. Điều này hữu ích trong việc kiểm tra và quản lý quyền truy cập trên các thư mục quan trọng, giúp tăng cường bảo mật cho hệ thống.
+
+
+Test thử :
+
+
+Để tạo một thư mục với quyền cho tất cả mọi người (tức là quyền `777`, cho phép đọc, ghi và thực thi), bạn có thể làm theo các bước sau:
+
+1. **Mở Terminal**.
+2. **Sử dụng lệnh `mkdir` để tạo thư mục**.
+3. **Sử dụng lệnh `chmod` để thiết lập quyền cho thư mục**.
+
+Dưới đây là các lệnh cụ thể:
+
+### Tạo thư mục
+```bash
+mkdir /path/to/your/directory
+```
+Thay thế `/path/to/your/directory` bằng đường dẫn mà bạn muốn tạo thư mục.
+![](https://img001.prntscr.com/file/img001/_FFGA2KHQSmAoBWd7VX8rg.png)
+### Thiết lập quyền cho thư mục
+```bash
+chmod 777 /path/to/your/directory
+```
+
+
+### Kiểm tra quyền của thư mục:
+Bạn có thể kiểm tra quyền của thư mục vừa tạo bằng lệnh:
+
+```bash
+ls -l /etc
+```
+
+### Kết quả:
+Bạn sẽ thấy đầu ra tương tự như sau, cho biết quyền là `drwxrwxrwx` (tức là `777`):
+
+![](	https://img001.prntscr.com/file/img001/1FFR0DgASVi6z82iE9mlHg.png)
+![](https://img001.prntscr.com/file/img001/deEFCIyRRuKuP_21ehw0XA.png)
+![](https://img001.prntscr.com/file/img001/QYvMPVqhTjCDo1vbjQ1scA.png)
+### Lưu ý:
+Cấp quyền `777` cho phép bất kỳ ai cũng có thể đọc, ghi và thực thi tệp trong thư mục đó, vì vậy hãy cẩn thận với việc chia sẻ thông tin nhạy cảm trong thư mục này.
