@@ -25,3 +25,4 @@ lsusb
 ```
 
 Nếu các thiết bị USB không xuất hiện trong danh sách, nghĩa là bạn đã vô hiệu hóa thành công.
+https://ubuntuhandbook.org/index.php/2024/03/disable-usb-ubuntu/
