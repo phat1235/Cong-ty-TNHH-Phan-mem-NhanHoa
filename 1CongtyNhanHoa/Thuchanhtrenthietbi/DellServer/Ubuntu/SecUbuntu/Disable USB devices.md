@@ -1,6 +1,6 @@
 ### 1. **Disable USB Devices Using sysfs**
 Một phương pháp khác là vô hiệu hóa các cổng USB thông qua **sysfs**.
-
+![](https://img001.prntscr.com/file/img001/Hqa6wfP8SyeVom-_faHkzQ.png)
 #### Các bước thực hiện:
 
 1. **Chạy lệnh sau** để vô hiệu hóa tất cả các USB devices trên hệ thống:
