@@ -34,7 +34,7 @@ user1:$6$abc123$klsdfjksdf8hsfalksdfhlfhsafkhsf:19000:0:99999:7:::
 
 ![](https://img001.prntscr.com/file/img001/-HaDuQs3Qxu28LNmwP1e4w.png)
 
-### 1. Kiểm tra tài khoản không có mật khẩu bằng lệnh `passwd -S`
+### 1. Kiểm tra tài khoản không có mật khẩu bằng lệnh `awk -F:`
 Lệnh này hiển thị trạng thái của tài khoản người dùng, bao gồm trạng thái mật khẩu.
 
 ```bash
@@ -44,12 +44,5 @@ sudo awk -F: '($2 == "!") {print $1}' /etc/shadow
 ### 2. Phân tích kết quả:
 - Nếu lệnh không trả về gì, điều đó có nghĩa là không có tài khoản nào trên hệ thống có mật khẩu trống.
 - Nếu có tài khoản, tên người dùng của các tài khoản đó sẽ xuất hiện, và bạn nên đặt mật khẩu cho chúng ngay lập tức bằng lệnh `passwd`.
-### 3. Kiểm tra trực tiếp với lệnh `cat`
-Bạn cũng có thể kiểm tra các tài khoản trong file `/etc/shadow` để xem có tài khoản nào không có mật khẩu:
-
-```bash
-sudo cat /etc/shadow | awk -F: '($2 == "") {print $1}'
-```
-
 
 File `/etc/shadow` trong Ubuntu (và các hệ điều hành Linux khác) chứa thông tin về mật khẩu người dùng, nhưng nó được bảo vệ chặt chẽ để ngăn chặn truy cập trái phép. Chỉ người dùng root hoặc người có quyền `sudo` mới có thể xem file này.
