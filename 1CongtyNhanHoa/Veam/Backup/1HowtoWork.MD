@@ -1,7 +1,7 @@
 ### Cách Veeam Backup & Replication Thực Hiện Sao Lưu
-
 Veeam Backup & Replication thực hiện việc sao lưu máy ảo (VM) theo các bước sau:
 
+![](	https://img001.prntscr.com/file/img001/9Xn3yS8MQXWDc9fYi3xnFA.png)
 1. **Khởi động phiên làm việc sao lưu**: Khi một phiên công việc sao lưu mới bắt đầu, Veeam Backup Manager trên máy chủ sao lưu sẽ được khởi động. Nó đọc cài đặt công việc từ cơ sở dữ liệu cấu hình và tạo danh sách các tác vụ VM để xử lý. Mỗi đĩa của các VM được thêm vào công việc sẽ tạo một tác vụ mới.
 
 2. **Kết nối với Dịch vụ Sao lưu**: Veeam Backup Manager kết nối với Veeam Backup Service, bao gồm thành phần quản lý tài nguyên. Trình lập lịch tài nguyên kiểm tra tài nguyên có sẵn trong hạ tầng sao lưu và phân công các proxy sao lưu và kho lưu trữ sao lưu để xử lý các tác vụ.
