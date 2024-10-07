@@ -2,7 +2,7 @@ Dưới đây là một số quy tắc bổ sung có thể được thêm vào c
 
 ### 1. Chặn ICMP Echo Reply từ mạng bên ngoài
 
-Ngoài việc chặn phản hồi ping từ mọi nguồn, bạn có thể chỉ cho phép ping từ mạng nội bộ:
+Ngoài việc chặn phản hồi ping từ mọi nguồn.
 
 ```bash
 # Chặn phản hồi ICMP Echo Request (ping) từ mọi nguồn
