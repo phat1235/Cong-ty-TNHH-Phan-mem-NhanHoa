@@ -22,17 +22,18 @@ Khi một phiên sao lưu mới bắt đầu, Veeam Backup & Replication thực 
 ### Sao lưu Tại chỗ
 
 Để sao lưu vào kho lưu trữ sao lưu Microsoft Windows hoặc Linux trong trang địa phương, bạn cần triển khai một proxy sao lưu trên một máy có quyền truy cập vào datastore nguồn và chỉ định công việc sao lưu cho proxy sao lưu này. Trong kịch bản này, Veeam Data Mover ở phía nguồn được khởi động trên proxy sao lưu, và Veeam Data Mover ở phía đích được khởi động trên kho lưu trữ Microsoft Windows hoặc Linux. Dữ liệu VM được gửi từ proxy sao lưu đến kho lưu trữ sao lưu qua mạng LAN.
-
+![](https://img001.prntscr.com/file/img001/TNTttUZdS3ycf9G4cTDlhg.png)
 Để sao lưu vào một thư mục chia sẻ trong trang địa phương, bạn cần triển khai một máy chủ gateway có quyền truy cập vào kho lưu trữ sao lưu thư mục chia sẻ. Bạn có thể chỉ định vai trò máy chủ gateway cho chính máy chủ sao lưu hoặc bất kỳ máy Microsoft Windows nào được thêm vào hạ tầng sao lưu.
 
 Bạn có thể sử dụng cùng một máy Microsoft Windows làm proxy sao lưu và máy chủ gateway cho SMB. Trong kịch bản này, Veeam Backup & Replication khởi động Veeam Data Movers ở cả hai phía trên cùng một máy, và gửi dữ liệu VM từ proxy sao lưu đến kho lưu trữ sao lưu thư mục chia sẻ qua mạng LAN.
-
-### Sao lưu Ngoài địa điểm
+![](https://img001.prntscr.com/file/img001/wQBsuxlvRn-NMVwPEJru4w.png)
+### Sao lưu Ngoài onsite
 
 Yêu cầu phổ biến cho sao lưu ngoài địa điểm là một Veeam Data Mover chạy trong trang sản xuất (gần với datastore nguồn), và Veeam Data Mover còn lại chạy ở trang từ xa, gần với kho lưu trữ sao lưu. Trong quá trình sao lưu, các Veeam Data Movers duy trì một kết nối ổn định, cho phép hoạt động không bị gián đoạn qua WAN hoặc các liên kết chậm.
-
+![](https://img001.prntscr.com/file/img001/9w8tN3m6SdGoQm3aHayuuA.png)
 Để sao lưu vào kho lưu trữ Microsoft Windows hoặc Linux trong trang từ xa, bạn cần triển khai một proxy sao lưu trong trang sản xuất, gần với datastore nguồn. Trong kịch bản này, Veeam Data Mover ở phía nguồn được khởi động trên proxy sao lưu, và Veeam Data Mover ở phía đích được khởi động trên kho lưu trữ Microsoft Windows hoặc Linux. Dữ liệu VM được gửi từ proxy sao lưu đến kho lưu trữ sao lưu qua WAN.
 
-Để sao lưu các VM vào kho lưu trữ sao lưu thư mục chia sẻ trong trang từ xa, bạn phải triển khai một proxy sao lưu trong trang nguồn và một máy chủ gateway trong trang từ xa. Kho lưu trữ sao lưu thư mục chia sẻ phải được chỉ định đến máy chủ gateway ở phía đích. Trong quá trình sao lưu, Veeam Data Mover ở phía nguồn được khởi động trên proxy sao lưu ở trang sản xuất, và Veeam Data Mover ở phía đích được khởi động trên máy chủ gateway ở trang từ xa. Dữ liệu VM được chuyển giữa proxy sao lưu và máy chủ gateway qua WAN.
 
+Để sao lưu các VM vào kho lưu trữ sao lưu thư mục chia sẻ trong trang từ xa, bạn phải triển khai một proxy sao lưu trong trang nguồn và một máy chủ gateway trong trang từ xa. Kho lưu trữ sao lưu thư mục chia sẻ phải được chỉ định đến máy chủ gateway ở phía đích. Trong quá trình sao lưu, Veeam Data Mover ở phía nguồn được khởi động trên proxy sao lưu ở trang sản xuất, và Veeam Data Mover ở phía đích được khởi động trên máy chủ gateway ở trang từ xa. Dữ liệu VM được chuyển giữa proxy sao lưu và máy chủ gateway qua WAN.
+![](https://img001.prntscr.com/file/img001/1A3bqtUNRu2eE6boEBJc_g.png)
 ---
