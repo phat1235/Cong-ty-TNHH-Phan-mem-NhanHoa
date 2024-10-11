@@ -20,6 +20,7 @@ net.ipv4.icmp_echo_ignore_all = 1
 # Kích hoạt SYN cookies
 net.ipv4.tcp_syncookies = 1
 
+SYN cookies cho phép máy chủ xử lý các kết nối TCP mà không cần duy trì trạng thái kết nối ban đầu cho đến khi xác nhận nhận được.
 # Giảm số lần thử lại khi gửi SYN-ACK
 net.ipv4.tcp_synack_retries = 1
 ```
