@@ -1,0 +1,48 @@
+
+Để cấu hình VLAN trong Proxmox và pfSense sử dụng giao diện web
+
+#### Thêm VLAN vào Bridge
+1. Chọn **Datacenter** ở thanh bên trái.
+2. Chọn **Network**.
+3. Nhấp vào **Create** và chọn **Linux Bridge**.
+4. Điền các thông tin:
+   - **Name**: Chọn tên cho bridge, ví dụ: `vmbr2`.
+   - 
+5. Sau khi tạo Linux Bridge xong ta tạo Linux VLAN 
+   - Nhập tên VLAN là vlan5
+   - Chọn VLAN RAW DEVICE là vmbr2 ta vừa tạo
+  
+
+Làm như vậy với VLAN 6
+### 1. Cấu Hình VLAN Trong Proxmox
+![](https://img001.prntscr.com/file/img001/34N6xC4-Te-IsyXpqF9zxQ.png)
+
+
+
+5. Nhấn **OK** để lưu cấu hình.
+
+![](https://img001.prntscr.com/file/img001/w2ZoFkGuRXSEPr3FP4XzQg.png)
+
+Tại VM pfsense ta cấu hình giống như hình
+
+- Wan là vmbr0
+- LAN là vmbr2 - sẽ là cổng trunk!
+![](https://img001.prntscr.com/file/img001/Lb2cfsK5RqSRlebjul-QEg.png)
+- Trên giao diện web của pfsense ta cũng add các vlan vào và cài địa chỉ ip , cài DHCP Server cho các interface VLAN
+![](https://img001.prntscr.com/file/img001/Q5PURn7JQACv7MWEWp0enw.png)
+
+#### : Cấu Hình DHCP (Tùy Chọn)
+1. Đi tới **Services** > **DHCP Server**.
+2. Chọn VLAN interface bạn đã tạo.
+3. Kích hoạt DHCP và cấu hình dải IP.
+![](https://img001.prntscr.com/file/img001/EELw4mXnQy216HC7A5ybYA.png)
+
+Sau khi cài xong
+![](https://img001.prntscr.com/file/img001/LW9XWZAQTkWNUlVObkFeaA.png)
+
+Tại máy ảo có id là linux18-2 nhận vlan 5 có ip 192.168.5.19
+![](https://img001.prntscr.com/file/img001/FmOYyaiaTLGLasn5Dv1tsQ.png)
+Tại máy ảo có id là linux-12 nhận vlan6 có ip 192.168.6.11
+![](https://img001.prntscr.com/file/img001/LC4IfS3wTMCWKRi21HbuZQ.png)
+Ping 2 máy ảo khác VLAN
+![](https://img001.prntscr.com/file/img001/BNqAVGQiTO6dk9bHGbpS5Q.png)
