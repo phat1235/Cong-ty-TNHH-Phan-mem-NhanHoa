@@ -114,6 +114,7 @@ Các thành phần trong câu lệnh tìm hiểu thêm tại: http://manpages.ub
 \- Liệt kê các máy ảo đang chạy: (liệt kê hết các máy ảo dù chạy hay không thêm tùy chọn –all):
 
   `virsh list`
+  ![](https://img001.prntscr.com/file/img001/i6ELSoSoTiSnZ-9gCNZd8Q.png)
 
 \- Bật máy ảo:
 
