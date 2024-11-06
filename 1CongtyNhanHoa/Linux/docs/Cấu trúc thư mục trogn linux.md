@@ -1,5 +1,5 @@
 # Cấu trúc thư mục linux
-
+![](https://img001.prntscr.com/file/img001/a7XHksUzRi-bWDaJzOFCqQ.png)
 * /: Thư mục root
  
   - Trong linux đây là thư gốc. Tất cả các thư mục khác đều nằm dưới thư mục này.
