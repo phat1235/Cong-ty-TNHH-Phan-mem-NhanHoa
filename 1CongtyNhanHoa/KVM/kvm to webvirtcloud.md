@@ -1,7 +1,6 @@
-**Bước 6: Thêm Compute host**  
-Trước khi thêm một hypervisor để quản lý, bạn cần cài đặt máy chủ ảo hóa.
+* Thêm Compute host**  
 
-Cài đặt ảo hóa KVM trên Ubuntu 24.04 (Noble Numbat).  
+Cài đặt ảo hóa KVM
 Cách cài đặt KVM trên các hệ điều hành Linux.
 
 **Cấu hình trên máy chủ KVM (Ubuntu):**  
