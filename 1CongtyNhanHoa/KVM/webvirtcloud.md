@@ -1,5 +1,5 @@
 **Bước 1: Cài đặt các phụ thuộc**  
-Trên hệ thống Ubuntu của bạn, bạn cần cài đặt tất cả các phụ thuộc cần thiết để xây dựng và chạy WebVirtCloud trên Ubuntu 24.04 (Noble Numbat). Bắt đầu với việc cập nhật hệ thống.  
+Trên hệ thống Ubuntu của bạn, bạn cần cài đặt tất cả các phụ thuộc cần thiết để xây dựng và chạy WebVirtCloud.
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
@@ -15,14 +15,14 @@ pkg-config libsasl2-dev libssl-dev libldap2-dev
 ```
 
 **Bước 2: Cài đặt Python và các module**  
-Phiên bản Python mới nhất trên Ubuntu 24.04 sẽ hoạt động tốt cho việc cài đặt WebVirtCloud. Cài đặt các gói bằng lệnh apt.
+Phiên bản Python . Cài đặt các gói bằng lệnh apt.
 ```bash
 sudo apt install python3 python3-pip python3-venv
 ```
 Kiểm tra phiên bản Python đã cài đặt.
 ```bash
 $ python --version
-Python 3.12.3
+Python 3.xx
 ```
 
 **Bước 3: Cài đặt máy chủ web Nginx**  
@@ -39,7 +39,7 @@ sudo systemctl enable --now nginx
 systemctl status nginx
 ```
 
-**Bước 4: Cài đặt WebVirtCloud trên Ubuntu 24.04**  
+**Bước 4: Cài đặt WebVirtCloud**  
 Sử dụng git để lấy mã nguồn mới nhất của WebVirtCloud:
 ```bash
 git clone https://github.com/retspen/webvirtcloud.git
