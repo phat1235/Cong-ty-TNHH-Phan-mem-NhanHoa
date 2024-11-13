@@ -132,3 +132,38 @@ Có hai tùy chọn: GPT và MBR. GPT là tiêu chuẩn hiện đại hơn, tron
 Ổ đĩa mới hiện đã được gắn kết và sẵn sàng sử dụng tại thư mục `/mnt/newdisk`.
 
 
+---
+# XÓA
+Để tháo và xóa ổ đĩa đã thêm vào Ubuntu (ở đây là `/dev/sdb1`), bạn có thể thực hiện các bước sau:
+
+1. **Unmount (tháo) ổ đĩa**  
+   Tháo ổ đĩa khỏi thư mục mount point:
+   ```bash
+   sudo umount /mnt/newdisk
+   ```
+
+2. **Xóa cấu hình tự động mount trong `/etc/fstab`**  
+   Nếu đã cấu hình để ổ đĩa tự động mount khi khởi động, mở tệp `/etc/fstab` và xóa dòng cấu hình cho `/dev/sdb1`:
+   ```bash
+   sudo nano /etc/fstab
+   ```
+   Xóa dòng tương ứng với `/mnt/newdisk` và lưu lại.
+
+3. **Xóa phân vùng (nếu muốn)**  
+   Để xóa phân vùng trên ổ đĩa `/dev/sdb`, sử dụng `fdisk`:
+   ```bash
+   sudo fdisk /dev/sdb
+   ```
+   - Nhấn `d` để xóa phân vùng.
+   - Chọn phân vùng muốn xóa (hoặc chỉ cần nhấn `Enter` nếu có một phân vùng duy nhất).
+   - Nhấn `w` để lưu và thoát.
+
+4. **Xóa thư mục mount point (nếu cần)**  
+   Nếu không cần dùng thư mục mount nữa, bạn có thể xóa nó:
+   ```bash
+   sudo rmdir /mnt/newdisk
+   ```
+
+Ổ đĩa `/dev/sdb` đã được tháo và các phân vùng đã được xóa nếu bạn đã thực hiện các bước trên.
+
+
