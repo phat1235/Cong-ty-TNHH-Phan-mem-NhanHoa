@@ -1,3 +1,58 @@
+## Kiến trúc của hệ điều hành Linux
+![](https://img001.prntscr.com/file/img001/yQide0_GS4WJ93SNfT2T0Q.png)
+## - Hạt nhân (Kernel):
+ Là trung tâm điều khiển hệ điều hành Linux, chứa mã nguồn kiểm soát hệ thống.  
+  - Có 2 phiên bản: phát triển mới nhất và ổn định mới nhất.  
+  - Thiết kế dạng modul, chỉ tải phần cần thiết lên bộ nhớ, tiết kiệm tài nguyên.  
+  - Hỗ trợ CPU Intel 80386, tận dụng khả năng quản lý bộ nhớ.  
+  - **Swap space:** Lưu trữ dữ liệu tạm trên đĩa khi thiếu bộ nhớ.  
+  - **Đặc tính:**  
+    - Bảo vệ vùng nhớ giữa các tiến trình.  
+    - Chỉ tải chương trình khi có yêu cầu.  
+## Shell
+Shell cung cấp tập lệnh cho người dùng thao tác với kernel để thực hiện công việc. Shell đọc các lệnh từ người dùng và xử lý. Ngoài ra shell còn cung cấp một số đặc tính khác như : chuyển
+hướng xuất nhập, ngôn ngữ lệnh để tạo các tập tin lệnh tương tự tập tin bat trong DOS.
+
+Có nhiều loại shell được dùng trong Linux. Điểm quan trọng để phân biệt các shell với nhau là bộ
+lệnh của mỗi shell.
+
+Ví dụ, C shell thì sử dụng các lệnh tương tự ngôn ngữ C, Bourne Shell thì
+dùng ngôn ngữ lệnh khác.
+
+Shell sử dụng chính trong Linux là GNU Bourne Again Shell (bash). Shell này là shell phát triển
+từ Bourne Shell, là shell sử dụng chính trong các hệ thống Unix, với nhiều tính năng mới như :
+điều khiển các tiến trình, các lệnh history, tên tập tin dài ...
+
+## Đĩa cứng và phân vùng đĩa trong Linux
+Đĩa cứng được phân ra nhiều vùng khác nhau gọi là partition. 
+
+Mỗi partition sử dụng một hệ thống tập tin và lưu trữ dữ liệu. Mỗi đĩa bạn chỉ chia được tối đa 4 partition chính (primary). Giới hạn
+như vậy là do Master Boot Record (MBR) của đĩa chỉ ghi tối đa 4 chỉ mục tới 4 partition.
+Để tạo nhiều partition lưu trữ dữ liệu ( hơn 4) người ta dùng partition mở rộng (extended
+partition). 
+
+Thực ra partition mở rộng cũng là primary partition nhưng cho phép tạo các partition
+con được gọi là logical partition trong nó.
+
+GPT ra đời giải quyết vấn đề của MBR là tối đa chia 4 phân vùng. Hỗ trợ 128 Phân vùng
+
+- **Quản lý ổ đĩa và phân vùng:**  
+  - **Truy xuất ổ đĩa:** Thông qua tập tin trong `/dev/` (fd: ổ mềm, hd: ổ cứng, sd: ổ SCSI).  
+  ![](https://img001.prntscr.com/file/img001/kFGIsQeiTiyRILE36AQPgA.png)
+  - **Ký hiệu:**  
+    - `hda`: Primary Master.  
+    - `hdb`: Primary Slave.  
+    - `hdc`: Secondary Master.  
+    - `hdd`: Secondary Slave.  
+    - `sda`, `sdb`: SCSI disks.  
+    ![](https://img001.prntscr.com/file/img001/tHYUT2mhSlatHdP_KkxojQ.png)
+  - **Partition:**  
+    - **Primary/Extended:** Đánh số 1-4.  
+    - **Logical:** Số từ 5 trở đi.  
+- **Cấu hình bắt buộc:**  
+  - Partition gốc (`/`): Chứa hệ điều hành.  
+  - **Swap Partition:** Không gian hoán đổi, thường bằng kích thước RAM.  
+  - 
 ## Khởi động hệ thống  
 Các bước khởi động hệ thống:  
 - Bước 1: Khi một máy PC bắt đầu khởi động, bộ vi xử lý sẽ tìm đến cuối vùng bộ nhớ hệ thống của BIOS và thực hiện các chỉ thị ở đó.  
