@@ -13,10 +13,14 @@ Bảng 2.1 giới thiệu một số cặp ký tự điều khiển có thể đ
 
 
 Ví dụ, hiện thời dấu nhắc shell có dạng:
-root@may1 /hda1] #
-Sau khi gõ lệnh
+### root@may1 /hda1]#
+Sau khi gõ lệnh 
+
 root@may1 /hdal] # PS1='[\h@\u \w: \d]\$'
+
 thi dấu nhắc shell được thay đổi là:
+
 [may1@root /mnt/hdal: Fri Oct 27 1#
+
 Ngoài việc đổi thứ tự giữa tên người dùng, máy còn cho biết thêm về ngày hệ thống quản lý và tên đầy đủ của thư mục hiện thời.
 Linux cung cấp cách thức hoàn toàn tương tự như đối với biến PS1 để thay đổi giá trị biến hệ thống PS2 tương ứng với dấu nhắc cấp hai.
