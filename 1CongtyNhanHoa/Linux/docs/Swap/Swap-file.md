@@ -16,6 +16,10 @@
    ```bash
    dd if=/dev/zero of=/var/swapfile bs=1M count=2048
    ```
+- Trong đó :
+- bs là đơn vị tính ( M , G , K)
+- count là số lượng bs cấp cho swap file
+- => swap file có dung lượng = count*bs
 4. **Tạo phân vùng swap:**
    ```bash
    mkswap /var/swapfile
