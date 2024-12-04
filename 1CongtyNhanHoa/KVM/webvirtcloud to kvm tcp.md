@@ -6,7 +6,7 @@ WebVirtCloud chạy ubuntu24 KVM chạy ubuntu 18.
 - **Cấu hình trên máy chủ KVM (Ubuntu):**  
 Sau khi cấu hình máy chủ hypervisor, thực hiện các bước sau:
 
-Với máy chủ Ubuntu18-24, chạy script có sẵn để cài đặt thêm supervisorctl 
+Với máy chủ KVM OS Ubuntu18-24, chạy script có sẵn để cài đặt thêm supervisorctl 
 ```bash
 LINK=https://raw.githubusercontent.com/cloudspinx/linux-bash-scripts/main/webvirtcloud/debian-ubuntu-kvm-prep.sh
 wget -O - $LINK | sudo sh
@@ -20,8 +20,8 @@ Dịch vụ libvirtd cũng phải đang chạy.
 ```bash
 systemctl status libvirtd
 ```
-**Thêm kết nối:**
-- Cấp quyền truy cập TCP trên máy KVM:
+- **Thêm kết nối:**
+  - Cấp quyền truy cập TCP trên máy KVM:
     - Sửa file `/etc/libvirt/libvirtd.conf`:
       ```bash
       sudo nano /etc/libvirt/libvirtd.conf
@@ -45,3 +45,7 @@ systemctl status libvirtd
       sudo systemctl daemon-reload
       sudo systemctl restart libvirtd
       ```
+
+
+![](https://img001.prntscr.com/file/img001/uU0MDjuoRPuPQ0gBwZd1gw.png)
+![](https://img001.prntscr.com/file/img001/grPfRmm4Tj6uJkLLP4uAiQ.png)
