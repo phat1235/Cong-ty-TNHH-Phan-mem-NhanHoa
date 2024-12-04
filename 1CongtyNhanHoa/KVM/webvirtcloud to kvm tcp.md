@@ -20,8 +20,8 @@ Dịch vụ libvirtd cũng phải đang chạy.
 ```bash
 systemctl status libvirtd
 ```
-- **Thêm kết nối:**
-  - Cấp quyền truy cập TCP trên máy KVM:
+**Thêm kết nối:**
+- Cấp quyền truy cập TCP trên máy KVM:
     - Sửa file `/etc/libvirt/libvirtd.conf`:
       ```bash
       sudo nano /etc/libvirt/libvirtd.conf
