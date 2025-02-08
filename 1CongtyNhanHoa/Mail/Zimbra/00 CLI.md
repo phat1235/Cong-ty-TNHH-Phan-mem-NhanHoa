@@ -3,7 +3,7 @@
 
 ### **Lệnh CLI trong Zimbra**
 Bảng dưới đây liệt kê các lệnh CLI trong thư mục `/opt/zimbra/bin` cùng với mô tả của chúng.
-
+![](https://img001.prntscr.com/file/img001/9Vi33unJRHqkrkiMtayImg.png)
 | Lệnh CLI | Mô tả |
 |----------|-------|
 | **antispam-mysqladmin** | Công cụ quản trị cơ sở dữ liệu SQL chống thư rác |
