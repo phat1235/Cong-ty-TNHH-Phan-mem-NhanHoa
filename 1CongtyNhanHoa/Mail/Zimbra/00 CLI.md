@@ -72,3 +72,371 @@ Bảng dưới đây liệt kê các lệnh CLI trong thư mục `/opt/zimbra/bi
 | **zmzimletctl** | Triển khai và cấu hình Zimlet |
 
 ---
+---
+Dưới đây là các lệnh Zimbra thông dụng dành cho quản trị viên để quản lý hệ thống, tài khoản, dịch vụ và giám sát hoạt động của Zimbra.  
+
+---
+
+## **1. Quản lý dịch vụ Zimbra**  
+
+### Kiểm tra trạng thái các dịch vụ Zimbra  
+```bash
+zmcontrol status
+```
+### Khởi động lại toàn bộ dịch vụ Zimbra  
+```bash
+zmcontrol restart
+```
+### Dừng toàn bộ dịch vụ Zimbra  
+```bash
+zmcontrol stop
+```
+### Khởi động toàn bộ dịch vụ Zimbra  
+```bash
+zmcontrol start
+```
+
+---
+
+## **2. Quản lý tài khoản Zimbra**  
+
+### Liệt kê tất cả tài khoản trong hệ thống  
+```bash
+zmprov -l gaa
+```
+### Tạo tài khoản mới  
+```bash
+zmprov ca ten_taikhoan@domain.com matkhau
+```
+### Đổi mật khẩu tài khoản  
+```bash
+zmprov sp ten_taikhoan@domain.com matkhau_moi
+```
+### Xóa tài khoản  
+```bash
+zmprov da ten_taikhoan@domain.com
+```
+### Khóa tài khoản  
+```bash
+zmprov ma ten_taikhoan@domain.com zimbraAccountStatus locked
+```
+### Mở khóa tài khoản  
+```bash
+zmprov ma ten_taikhoan@domain.com zimbraAccountStatus active
+```
+### Thêm alias (bí danh) cho tài khoản  
+```bash
+zmprov aaa ten_taikhoan@domain.com alias@domain.com
+```
+### Xóa alias của tài khoản  
+```bash
+zmprov raa ten_taikhoan@domain.com alias@domain.com
+```
+### Liệt kê tất cả alias của tài khoản  
+```bash
+zmprov ga ten_taikhoan@domain.com | grep zimbraMailAlias
+```
+### Thêm forward email cho tài khoản  
+```bash
+zmprov ma ten_taikhoan@domain.com zimbraPrefMailForwardingAddress email_nhan@domain.com
+```
+### Xóa forward email  
+```bash
+zmprov ma ten_taikhoan@domain.com zimbraPrefMailForwardingAddress ""
+```
+
+---
+
+## **3. Quản lý miền (Domain) trong Zimbra**  
+
+### Liệt kê tất cả các domain trên hệ thống  
+```bash
+zmprov gad
+```
+### Thêm domain mới  
+```bash
+zmprov cd ten_moi_domain.com
+```
+### Xóa domain  
+```bash
+zmprov dd ten_moi_domain.com
+```
+### Đặt domain mặc định  
+```bash
+zmprov md ten_domain.com zimbraDomainDefaultCOSId COS_ID
+```
+(Thay `COS_ID` bằng ID của COS mong muốn)
+
+---
+
+## **4. Quản lý danh sách phân phối (Distribution List - DL)**  
+
+### Liệt kê tất cả danh sách phân phối  
+```bash
+zmprov gadl
+```
+### Tạo danh sách phân phối  
+```bash
+zmprov cdl ten_danhsach@domain.com
+```
+### Thêm thành viên vào danh sách phân phối  
+```bash
+zmprov adlm ten_danhsach@domain.com user@domain.com
+```
+### Xóa thành viên khỏi danh sách phân phối  
+```bash
+zmprov rdlm ten_danhsach@domain.com user@domain.com
+```
+### Xóa danh sách phân phối  
+```bash
+zmprov ddl ten_danhsach@domain.com
+```
+### Liệt kê các thành viên của danh sách phân phối  
+```bash
+zmprov gdlm ten_danhsach@domain.com
+```
+
+---
+
+## **5. Quản lý MTA (Postfix) và Hàng đợi Email**  
+
+### Kiểm tra hàng đợi mail  
+```bash
+mailq
+```
+### Xóa tất cả email trong hàng đợi  
+```bash
+postsuper -d ALL
+```
+### Xóa email bị kẹt trong hàng đợi  
+```bash
+postqueue -p | awk 'BEGIN { RS = "" } /email@domain.com/ { print $1 }' | tr -d '*' | xargs -r postsuper -d
+```
+(Thay `email@domain.com` bằng địa chỉ email bị kẹt)  
+
+### Đẩy lại các email trong hàng đợi  
+```bash
+postqueue -f
+```
+### Kiểm tra log của Postfix  
+```bash
+tail -f /var/log/mail.log
+```
+hoặc  
+```bash
+tail -f /var/log/zimbra.log
+```
+
+---
+
+## **6. Sao lưu và khôi phục trong Zimbra**  
+
+### Thực hiện sao lưu toàn bộ hệ thống  
+```bash
+zmbackup -f -a all
+```
+### Khôi phục dữ liệu từ bản sao lưu  
+```bash
+zmrestore -a ten_taikhoan@domain.com -rf
+```
+### Tạo backup mailbox cụ thể  
+```bash
+zmmailbox -z -m ten_taikhoan@domain.com getRestURL "//?fmt=tgz" > /tmp/backup_mailbox.tgz
+```
+### Khôi phục mailbox từ file backup  
+```bash
+zmmailbox -z -m ten_taikhoan@domain.com postRestURL "//?fmt=tgz" < /tmp/backup_mailbox.tgz
+```
+
+---
+
+## **7. Giám sát và Debug hệ thống Zimbra**  
+
+### Kiểm tra dung lượng ổ cứng  
+```bash
+df -h
+```
+### Kiểm tra tiến trình đang chạy của Zimbra  
+```bash
+ps aux | grep zimbra
+```
+### Kiểm tra log hoạt động  
+```bash
+tail -f /var/log/zimbra.log
+```
+### Kiểm tra lỗi đăng nhập  
+```bash
+grep "authentication failed" /var/log/zimbra.log
+```
+### Kiểm tra email bị từ chối  
+```bash
+grep "reject" /var/log/zimbra.log
+```
+
+---
+
+## **8. Quản lý chứng chỉ SSL trong Zimbra**  
+
+### Kiểm tra trạng thái chứng chỉ SSL  
+```bash
+zmcertmgr viewdeployedcrt
+```
+### Gia hạn chứng chỉ SSL tự ký  
+```bash
+zmcertmgr createca -new
+zmcertmgr deployca
+zmcertmgr deploycrt self
+zmcontrol restart
+```
+### Cài đặt chứng chỉ SSL thương mại  
+```bash
+zmcertmgr verifycrt comm /path/to/certificate.crt /path/to/ca_bundle.crt
+zmcertmgr deploycrt comm /path/to/certificate.crt /path/to/ca_bundle.crt
+zmcontrol restart
+```
+
+---
+
+## **9. Quản lý dịch vụ Proxy và MTA**  
+
+### Kiểm tra trạng thái proxy  
+```bash
+zmproxyctl status
+```
+### Dừng dịch vụ proxy  
+```bash
+zmproxyctl stop
+```
+### Khởi động lại dịch vụ proxy  
+```bash
+zmproxyctl restart
+```
+### Kiểm tra trạng thái MTA  
+```bash
+zmmtactl status
+```
+### Dừng dịch vụ MTA  
+```bash
+zmmtactl stop
+```
+### Khởi động lại dịch vụ MTA  
+```bash
+zmmtactl restart
+```
+
+---
+
+### **Các lệnh Zimbra zmprov thông dụng**  
+
+#### **1. Tạo tài khoản mới**  
+- **Tạo tài khoản với mật khẩu mặc định từ COS (Class of Service):**  
+  ```bash
+  zmprov ca name@domain.com password
+  ```
+- **Tạo tài khoản với mật khẩu và gán vào COS cụ thể (cần biết COS ID):**  
+  ```bash
+  zmprov gc <COSname>
+  zmprov ca name@domain.com password zimbraCOS cosIDnumberstring
+  ```
+- **Tạo tài khoản mà không sử dụng xác thực mật khẩu nội bộ:**  
+  ```bash
+  zmprov ca name@domain.com ''
+  ```
+  (Dấu nháy đơn rỗng để chỉ ra rằng tài khoản này không có mật khẩu nội bộ.)
+
+#### **2. Thêm alias cho tài khoản**  
+```bash
+zmprov aaa accountname@domain.com aliasname@domain.com
+```
+
+#### **3. Tạo danh sách phân phối (Distribution List - DL)**  
+```bash
+zmprov cdl listname@domain.com
+```
+(Lệnh này trả về ID của danh sách phân phối.)
+
+- **Thêm thành viên vào danh sách phân phối:**  
+  ```bash
+  zmprov adlm listname@domain.com member@domain.com
+  ```
+  (Có thể thêm nhiều thành viên từ Zimbra Admin Console.)
+
+#### **4. Đổi mật khẩu quản trị viên**  
+```bash
+zmprov sp admin@domain.com password
+```
+
+#### **5. Quản lý domain**  
+- **Tạo domain mới và xác thực bằng Zimbra LDAP:**  
+  ```bash
+  zmprov cd marketing.domain.com zimbraAuthMech zimbra
+  ```
+- **Đặt domain mặc định:**  
+  ```bash
+  zmprov mcf zimbraDefaultDomain domain1.com
+  ```
+
+#### **6. Liệt kê thông tin hệ thống**  
+- **Liệt kê tất cả các COS (Class of Service) và thuộc tính:**  
+  ```bash
+  zmprov gac -v
+  ```
+- **Liệt kê tất cả tài khoản trong một domain cụ thể:**  
+  ```bash
+  zmprov gaa domain.com
+  ```
+- **Liệt kê tất cả tài khoản cùng với cấu hình chi tiết:**  
+  ```bash
+  zmprov gaa -v domain.com
+  ```
+
+#### **7. Bật logging cho một server cụ thể**  
+```bash
+zmprov ms server.com +zimbraServiceEnabled logger
+zmloggerctl start
+```
+
+#### **8. Kiểm tra trạng thái của một dịch vụ**  
+```bash
+zmprov gs server.com zimbraServiceEnabled=ldap
+```
+(Lệnh trên kiểm tra xem dịch vụ LDAP có đang chạy không.)
+
+#### **9. Chỉnh sửa thời gian xóa mail cũ (mail purge interval)**  
+```bash
+zmprov ms server.com zimbraMailPurgeSleepInterval <Xm>
+```
+- `X` là thời gian giữa hai lần quét xóa email cũ.
+- `m` là phút (có thể thay bằng `h` cho giờ).
+
+#### **10. Tùy chỉnh thông báo email mới**  
+```bash
+zmprov ma name@domain.com zimbraNewMailNotificationBody 'Important message from ${SENDER_ADDRESS}.${NEWLINE}Subject:${SUBJECT}'
+```
+(Có thể thay đổi template của email thông báo.)
+
+#### **11. Bật thông báo SMS cho lịch (Calendar Reminder SMS Notification)**  
+- **Bật cho COS (Class of Service):**  
+  ```bash
+  zmprov mc <default> zimbraFeatureCalendarReminderDeviceEmailEnabled TRUE
+  ```
+- **Bật cho một tài khoản cụ thể:**  
+  ```bash
+  zmprov ma <user1> zimbraFeatureCalendarReminderDeviceEmailEnabled TRUE
+  ```
+- **Bật cho toàn bộ domain:**  
+  ```bash
+  zmprov md <domain> zimbraFeatureCalendarReminderDeviceEmailEnabled TRUE
+  ```
+
+#### **12. Bật tính năng Activity Stream (lọc email theo mức độ ưu tiên)**  
+- **Bật cho toàn bộ COS:**  
+  ```bash
+  zmprov mc <default> zimbraFeaturePriorityInboxEnabled TRUE
+  ```
+- **Bật cho một tài khoản cụ thể:**  
+  ```bash
+  zmprov ma <user1> zimbraFeaturePriorityInboxEnabled TRUE
+  ```
+
+---
