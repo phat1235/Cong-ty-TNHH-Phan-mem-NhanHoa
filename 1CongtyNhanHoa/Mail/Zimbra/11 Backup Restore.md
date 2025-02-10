@@ -200,7 +200,7 @@ Hoặc nếu muốn nén lại:
 ```bash
 tar -czvf /backup/zimbra-full-$(date +%F).tar.gz /opt/zimbra
 ```
-
+![](https://img001.prntscr.com/file/img001/PbBT8Zh4TCeZJyhyFwoZeg.png)
 📌 **Giải thích:**  
 - `rsync -avz /opt/zimbra /backup/zimbra-full/` sao lưu toàn bộ thư mục Zimbra mà không cần nén.  
 - `tar -czvf` tạo file backup `.tar.gz` gọn hơn, có thể dễ dàng di chuyển.  
