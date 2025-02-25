@@ -184,6 +184,7 @@ cd /usr/share/squirrelmail/config
 ![](https://img001.prntscr.com/file/img001/tiCoDJevRTOH7VW2AMASeg.png)
 
 ![] (https://img001.prntscr.com/file/img001/OCfRWoodQAWxKvFt-jesDg.png)
+
 Chỉnh sửa Apache để hỗ trợ SquirrelMail:  
 ```bash
 vi /etc/httpd/conf/httpd.conf
