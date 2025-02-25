@@ -1,4 +1,3 @@
----
 
 # Cài đặt Mail Server trên CentOS 7 với Postfix, Dovecot & SquirrelMail  
 
@@ -16,7 +15,7 @@ yum remove sendmail -y
 ```
 Lệnh này giúp tránh xung đột giữa hai dịch vụ MTA - Mail Transfer Agent.
 
----
+
 
 ## 3. Cấu hình hostname  
 Thiết lập hostname chính xác cho máy chủ:  
